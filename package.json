@@ -1,0 +1,16 @@
+{
+  "name": "bamboo",
+  "version": "1.0.0",
+  "description": "Bamboo is store for fruits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fruits",
+    "store",
+    "ecommerce"
+  ],
+  "author": "amr elmeslimany, aee",
+  "license": "ISC"
+}
