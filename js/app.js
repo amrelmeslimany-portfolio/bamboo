@@ -1,6 +1,6 @@
 $(function () {
   // All Vars
-  const PUBLIC_SETTING_CAROUSEL = (...other) => ({
+  const PUBLIC_SETTING_CAROUSEL = (other) => ({
     autoWidth: true,
     margin: 30,
     dots: false,
@@ -12,20 +12,30 @@ $(function () {
     ...PUBLIC_SETTING_CAROUSEL({
       responsive: {
         0: {
+          loop: true,
           center: true,
-          items: 1,
         },
-        1500: {
+        768: {
           center: false,
-          items: 5,
+          loop: false,
         },
       },
     }),
   });
 
-  $(".best-products-swiper").owlCarousel(
-    PUBLIC_SETTING_CAROUSEL({
-      loop: true,
-    })
-  );
+  // Best Products At Home page
+  $(".best-products-swiper").owlCarousel({
+    ...PUBLIC_SETTING_CAROUSEL({
+      responsive: {
+        0: {
+          loop: true,
+          center: true,
+        },
+        768: {
+          center: false,
+          loop: false,
+        },
+      },
+    }),
+  });
 });

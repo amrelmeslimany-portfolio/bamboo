@@ -34,54 +34,59 @@
                     <a href="index.html" class="navbar-brand">
                         <img src="../../assets/img/logo.png" alt="bamboo logo main" width="100">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler py-2 rounded-4 bg-primary border-0 ms-sm-auto me-sm-3" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-white"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="mainNavbar">
+                    <div class="features-list-buttons list-inline order-lg-1">
+                        <!-- Search Input At Modal before the scripts tag -->
+                        <button class="btn btn-primary hv-bg-color rounded-4 list-inline-item" data-bs-toggle="modal"
+                            data-bs-target="#searchBox">
+                            <span class="d-none d-xl-inline">Search</span>
+                            <i class="fa fa-search ms-xl-1"></i>
+                        </button>
+                        <button class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
+                            <i class="fa fa-heart "></i>
+                        </button>
+                        <button class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
+                            <i class="fas fa-bag-shopping"></i>
+
+                            <!-- Notifactions -->
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle px-2 fw-bold badge rounded-circle bg-offline-color">
+                                3
+                            </span>
+                        </button>
+                        <button class="btn btn-primary rounded-4 hv-bg-color list-inline-item">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse border-bottom border-lg-0 py-2 py-0-lg" id="mainNavbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-1 me-xlg-3">
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xlg-4 active"
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
                                     href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xlg-4" href="about-us.html">About
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="about-us.html">About
                                     Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xlg-4"
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4"
                                     href="companies.html">Companies</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xlg-4" href="offers.html">offers</a>
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="offers.html">offers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xlg-4" href="contact-us.html">contact
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="contact-us.html">contact
                                     us</a>
                             </li>
                         </ul>
-                        <div class="list-inline">
-                            <button class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
-                                Search
-                                <i class="fa fa-search ms-1"></i>
-                            </button>
-                            <button class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
-                                <i class="fa fa-heart "></i>
-                            </button>
-                            <button class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
-                                <i class="fas fa-bag-shopping"></i>
-
-                                <!-- Notifactions -->
-                                <span
-                                    class="position-absolute top-0 start-100 translate-middle px-2 fw-bold badge rounded-circle bg-offline-color">
-                                    3
-                                </span>
-                            </button>
-                            <button class="btn btn-primary rounded-4 hv-bg-color list-inline-item">
-                                <i class="fa-solid fa-user"></i>
-                            </button>
-                        </div>
                     </div>
+
+
                 </nav>
 
                 <section class="row g-4 py-5">
@@ -92,8 +97,8 @@
                         </h1>
 
                         <p class="lead my-3 my-lg-5">
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            A wide choice of natural and organic products at your fingertips, delivered to you wherever
+                            you are to enjoy food on the instinct!
                         </p>
 
                         <a href="#" class="btn btn-secondary customed-rounded btn-lg text-capitalize px-3">
@@ -277,8 +282,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -325,8 +330,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -374,8 +379,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -418,8 +423,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -462,8 +467,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -510,8 +515,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -524,7 +529,7 @@
                     </div>
 
                     <!-- Seprate Strawberry -->
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                         <div class="bg-danger p-4 rounded-4 overflow-hidden">
                             <div class="row gy-4">
                                 <div class="col-lg-5 col-md-6">
@@ -559,7 +564,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
                     <!-- Other Products -->
@@ -596,8 +601,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -645,8 +650,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -689,8 +694,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -733,8 +738,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -781,8 +786,8 @@
                                                 (152)
                                             </li>
                                         </ul>
-                                        <p>Minimum order: <span>15$</span></p>
-                                        <p class="mb-0">Delivery time: <span>15mints</span></p>
+                                        <p class="display-md">Minimum order: <span>15$</span></p>
+                                        <p class="mb-0 display-md">Delivery time: <span>15mints</span></p>
                                     </div>
                                 </article>
                                 <div class="ms-2 text-end flex-shrink-0 d-flex flex-column">
@@ -798,7 +803,7 @@
                     <div class="col-xxl-4 col-lg-6">
                         <div class="fruit-card overflow-hidden card px-0 border-0 rounded-4 position-relative">
                             <div class="card-body px-4 d-flex align-items-center">
-                                <div class=" text-center">
+                                <div class="text-center">
                                     <svg viewBox="0 0 50 9" class="svg-text" width="180">
                                         <text x="6%" y="70%" fill="#fff">
                                             pineapple
@@ -1067,35 +1072,36 @@
                         <img src="../../assets/img/logo.png" width="130" alt="bamboo logo">
                     </a>
                     <p class="my-4 lead display-omd">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type.
+                        We care about the smallest details and components because we strive to achieve the perfect
+                        balance for every human being "body and soul"
                     </p>
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="#">
-                                <img src="../../assets/img/social/linkden.png" alt="bamboo linkden">
+                                <img src="../../assets/img/social/black-instagram.png" width="25"
+                                    alt="bamboo instagram">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">
-                                <img src="../../assets/img/social/facebook.png" alt="bamboo facebook">
+                                <img src="../../assets/img/social/whatsapp.png" width="25" alt="bamboo whatsapp">
+                            </a>
+                        </li>
+                        <!-- <li class="list-inline-item">
+                            <a href="#">
+                                <img src="../../assets/img/social/twitter.png" width="25" alt="bamboo twitter">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">
-                                <img src="../../assets/img/social/twitter.png" alt="bamboo twitter">
+                                <img src="../../assets/img/social/instagram.png" width="25" alt="bamboo instagram">
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="#">
-                                <img src="../../assets/img/social/instagram.png" alt="bamboo instagram">
+                                <img src="../../assets/img/social/youtube.png" width="25" alt="bamboo youtube">
                             </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <img src="../../assets/img/social/youtube.png" alt="bamboo youtube">
-                            </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="col-lg-2 offset-xl-1 col-md-6">
@@ -1140,7 +1146,7 @@
             </div>
         </div>
         <!-- down -->
-        <div class="bg-secondary text-white py-2 text-center text-md-start">
+        <div class="bg-secondary text-white py-2 text-center text-md-start mb-5 mb-sm-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -1164,6 +1170,32 @@
     </footer>
 
 
+
+    <!--
+        * Models
+        ** Search Modal 
+     -->
+
+    <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="searchBoxLabel" aria-hidden="true">
+        <div class="modal-dialog m-0" style="max-width: 100% !important;">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <h4 class="mb-0">Do Search</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-5">
+                    <form>
+                        <div class="input-group">
+                            <button class="btn btn-primary hv-bg-color" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                            <input type="search" name="search" class="form-control form-control-lg"
+                                placeholder="Search On Anything">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <!-- !Note: Bootstrap doesnt depend on jquery -->
