@@ -22,6 +22,36 @@
 </head>
 
 <body>
+
+    <!-- Loader -->
+    <div
+        class="page-loading position-fixed top-0 start-0 w-100 h-100 align-items-center justify-content-center flex-column gap-2 bg-white">
+        <img src="../../assets/img/logo.png" class="load-img" alt="bamboo logo">
+        <span class="load-text text-primary display-omd">Loading...</span>
+    </div>
+
+    <!-- Language Button -->
+    <div class="language-menu dropend position-fixed top-50 start-0 translate-middle-y">
+        <button class="btn shadow-sm rounded-end bg-white border border-light dropdown-toggle" type="button"
+            id="languageDropdown" data-bs-toggle="dropdown">
+            <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
+        </button>
+
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+            <li class="dropdown-item active">
+                <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
+                <span>EN</span>
+            </li>
+            <li>
+                <a class="dropdown-item" href="../ar/index.html">
+                    <img src="../../assets/img/langs-icons/ar.png" width="25" alt="arabic language bamboo">
+                    <span>AR</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content -->
     <div class="wrap-fullpage">
         <!-- 
             * Main Header
@@ -29,8 +59,9 @@
             ** Intro
          -->
         <header id="main-header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+                <div class="container">
                     <a href="index.html" class="navbar-brand">
                         <img src="../../assets/img/logo.png" alt="bamboo logo main" width="100">
                     </a>
@@ -41,11 +72,10 @@
                     </button>
                     <div class="features-list-buttons list-inline order-lg-1">
                         <!-- Search Input At Modal before the scripts tag -->
-                        <button class="btn btn-primary hv-bg-color rounded-4 list-inline-item" data-bs-toggle="modal"
-                            data-bs-target="#searchBox">
+                        <a href="search.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <span class="d-none d-xl-inline">Search</span>
                             <i class="fa fa-search ms-xl-1"></i>
-                        </button>
+                        </a>
                         <button class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <i class="fa fa-heart "></i>
                         </button>
@@ -58,11 +88,106 @@
                                 3
                             </span>
                         </button>
-                        <button class="btn btn-primary rounded-4 hv-bg-color list-inline-item">
-                            <i class="fa-solid fa-user"></i>
-                        </button>
+
+
+                        <!-- Form Signin / signup -->
+
+                        <div class="dropdown list-inline-item">
+                            <button class="dropdown-toggle w-100 h-100 hide-arrow btn btn-primary rounded-4 hv-bg-color"
+                                data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                                type="button">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+
+
+                            <div class="dropdown-menu dropdown-menu-end rounded-4 p-4" style="min-width: 360px;">
+                                <!-- Forms Buttons -->
+                                <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-4 active" id="pills-signin-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-signin" type="button"
+                                            role="tab" aria-controls="pills-signin" aria-selected="true">Sign
+                                            In</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-4" id="pills-signup-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-signup" type="button" role="tab"
+                                            aria-controls="pills-signup" aria-selected="false">Sign Up</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- Sign in form -->
+                                    <div class="tab-pane fade show active" id="pills-signin" role="tabpanel"
+                                        aria-labelledby="pills-signin-tab">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="signin-email" class="form-label">Email</label>
+                                                <input type="email"
+                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    id="signin-email" placeholder="please enter your Email">
+                                            </div>
+                                            <div>
+                                                <label for="signin-password" class="form-label">Password</label>
+                                                <input type="password"
+                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    id="signin-password" placeholder="please enter your Password">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <a href="#"
+                                                    class="text-info text-decoration-underline display-sm ms-1">Forget
+                                                    your
+                                                    password?</a>
+                                            </div>
+                                            <div class="text-center py-sm-5">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">Sign
+                                                    In</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Sign Up form -->
+                                    <div class="tab-pane fade" id="pills-signup" role="tabpanel"
+                                        aria-labelledby="pills-signup-tab">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="signup-email" class="form-label">Email</label>
+                                                <input type="email"
+                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    id="signup-email" placeholder="please enter your Email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signup-fullname" class="form-label">Fullname</label>
+                                                <input type="text" class="form-control rounded-4 border-light shadow-lg"
+                                                    id="signup-fullname" placeholder="please enter your Fullname">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signup-phonenumber" class="form-label">Phone number</label>
+                                                <input type="tel" class="form-control rounded-4 border-light shadow-lg"
+                                                    id="signup-phonenumber"
+                                                    placeholder="please enter your Phone number">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signup-password" class="form-label">Password</label>
+                                                <input type="password"
+                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    id="signup-password" placeholder="please enter your Password">
+                                            </div>
+
+                                            <div class="text-center py-sm-3">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">Sign
+                                                    Up</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="collapse navbar-collapse border-bottom border-lg-0 py-2 py-0-lg" id="mainNavbar">
+                    <div class="collapse navbar-collapse pt-2 py-0-lg" id="mainNavbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-1 me-xlg-3">
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
@@ -85,9 +210,12 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </nav>
 
 
-                </nav>
+
+            <div class="container">
 
                 <section class="row g-4 py-5">
 
@@ -113,6 +241,7 @@
 
                 </section>
             </div>
+
         </header>
 
         <!-- 
@@ -1169,33 +1298,6 @@
         </div>
     </footer>
 
-
-
-    <!--
-        * Models
-        ** Search Modal 
-     -->
-
-    <div class="modal fade" id="searchBox" tabindex="-1" aria-labelledby="searchBoxLabel" aria-hidden="true">
-        <div class="modal-dialog m-0" style="max-width: 100% !important;">
-            <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <h4 class="mb-0">Do Search</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body py-5">
-                    <form>
-                        <div class="input-group">
-                            <button class="btn btn-primary hv-bg-color" type="submit"><i
-                                    class="fas fa-search"></i></button>
-                            <input type="search" name="search" class="form-control form-control-lg"
-                                placeholder="Search On Anything">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <!-- !Note: Bootstrap doesnt depend on jquery -->
