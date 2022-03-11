@@ -16,13 +16,6 @@ $(function () {
     $(this).remove();
   });
 
-  // Hide language menu when arrive to header and footer when scroll and window load
-  toggleLanguageMenu($(window));
-
-  $(window).on("scroll", function () {
-    toggleLanguageMenu();
-  });
-
   // Categories carousel at home page
   $(".categories-swiper").owlCarousel({
     ...PUBLIC_SETTING_CAROUSEL({
@@ -54,20 +47,4 @@ $(function () {
       },
     }),
   });
-
-  // Reused Functions
-  function toggleLanguageMenu(win = $(this)) {
-    // Hide language when footer
-    if (win.scrollTop() + 350 >= mainFooter.offset().top) {
-      languageMenu.hide(100);
-      return;
-    }
-    // Hide language when header
-    if (win.scrollTop() - 200 <= mainHeader.offset().top) {
-      languageMenu.hide(100);
-      return;
-    }
-
-    languageMenu.show(100);
-  }
 });

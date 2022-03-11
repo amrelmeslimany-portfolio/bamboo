@@ -30,26 +30,7 @@
         <span class="load-text text-primary display-omd">Loading...</span>
     </div>
 
-    <!-- Language Button -->
-    <div class="language-menu dropend position-fixed top-50 start-0 translate-middle-y">
-        <button class="btn shadow-sm rounded-end bg-white border border-light dropdown-toggle" type="button"
-            id="languageDropdown" data-bs-toggle="dropdown">
-            <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
-        </button>
 
-        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-            <li class="dropdown-item active">
-                <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
-                <span>EN</span>
-            </li>
-            <li>
-                <a class="dropdown-item" href="../ar/index.html">
-                    <img src="../../assets/img/langs-icons/ar.png" width="25" alt="arabic language bamboo">
-                    <span>AR</span>
-                </a>
-            </li>
-        </ul>
-    </div>
 
     <!-- Content -->
     <div class="wrap-fullpage">
@@ -65,12 +46,12 @@
                     <a href="index.html" class="navbar-brand">
                         <img src="../../assets/img/logo.png" alt="bamboo logo main" width="100">
                     </a>
-                    <button class="navbar-toggler py-2 rounded-4 bg-primary border-0 ms-sm-auto me-sm-3" type="button"
+                    <button class="navbar-toggler py-2 rounded-4 bg-primary border-0 ms-auto me-3" type="button"
                         data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars text-white"></i>
                     </button>
-                    <div class="features-list-buttons list-inline order-lg-1">
+                    <div class="features-list-buttons list-inline order-lg-1 me-sm-3">
                         <!-- Search Input At Modal before the scripts tag -->
                         <a href="search.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <span class="d-none d-xl-inline">Search</span>
@@ -123,13 +104,13 @@
                                             <div class="mb-3">
                                                 <label for="signin-email" class="form-label">Email</label>
                                                 <input type="email"
-                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signin-email" placeholder="please enter your Email">
                                             </div>
                                             <div>
                                                 <label for="signin-password" class="form-label">Password</label>
                                                 <input type="password"
-                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signin-password" placeholder="please enter your Password">
                                             </div>
 
@@ -153,24 +134,26 @@
                                             <div class="mb-3">
                                                 <label for="signup-email" class="form-label">Email</label>
                                                 <input type="email"
-                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signup-email" placeholder="please enter your Email">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="signup-fullname" class="form-label">Fullname</label>
-                                                <input type="text" class="form-control rounded-4 border-light shadow-lg"
+                                                <input type="text"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signup-fullname" placeholder="please enter your Fullname">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="signup-phonenumber" class="form-label">Phone number</label>
-                                                <input type="tel" class="form-control rounded-4 border-light shadow-lg"
+                                                <input type="tel"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signup-phonenumber"
                                                     placeholder="please enter your Phone number">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="signup-password" class="form-label">Password</label>
                                                 <input type="password"
-                                                    class="form-control rounded-4 border-light shadow-lg"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signup-password" placeholder="please enter your Password">
                                             </div>
 
@@ -186,6 +169,28 @@
                         </div>
 
 
+                    </div>
+                    <!-- Language Button -->
+                    <div class="language-menu dropdown order-lg-1">
+                        <button
+                            class="btn shadow-sm rounded-4 shadow-sm hide-arrow px-2 border border-light dropdown-toggle"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                            <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li class="dropdown-item active">
+                                <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
+                                <span>EN</span>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../ar/index.html">
+                                    <img src="../../assets/img/langs-icons/ar.png" width="25"
+                                        alt="arabic language bamboo">
+                                    <span>AR</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="collapse navbar-collapse pt-2 py-0-lg" id="mainNavbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-1 me-xlg-3">
