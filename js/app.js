@@ -2,6 +2,8 @@ $(function () {
   // All Vars
   const loading = $(".page-loading");
   const mainHeader = $("#main-header");
+  const quantityButtons = $(".quantity-buttons");
+
   const PUBLIC_SETTING_CAROUSEL = (other) => ({
     autoWidth: true,
     margin: 30,
@@ -50,6 +52,33 @@ $(function () {
           },
         },
       }),
+    });
+  }
+
+  // Shopping Cart Page
+  if (quantityButtons.length) {
+    quantityButtons.each(function () {
+      let [minus, input, plus] = [
+        $(this).find(".minus"),
+        $(this).find("input"),
+        $(this).find(".plus"),
+      ];
+
+      let inputVal = parseInt(input.val());
+
+      // Increase Quantity
+      minus.click(function () {
+        if (inputVal > 1) {
+          inputVal -= 1;
+          input.val(inputVal);
+        }
+      });
+
+      // Decrease Quantity
+      plus.click(function () {
+        inputVal += 1;
+        input.val(inputVal);
+      });
     });
   }
 

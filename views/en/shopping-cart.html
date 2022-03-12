@@ -60,7 +60,7 @@
                     <!-- Settings Links (Favourite , profile , cart , search) -->
                     <div class="features-list-buttons list-inline order-lg-1 me-sm-3">
                         <!-- Search Input At Modal before the scripts tag -->
-                        <a href="search.html" class="btn hv-bg-color rounded-4 list-inline-item btn-secondary">
+                        <a href="search.html" class="btn hv-bg-color rounded-4 list-inline-item btn-primary">
                             <span class="d-none d-xl-inline">Search</span>
                             <i class="fa fa-search ms-xl-1"></i>
                         </a>
@@ -68,7 +68,7 @@
                             <i class="fa fa-heart "></i>
                         </a>
                         <a href="shopping-cart.html"
-                            class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
+                            class="btn btn-secondary rounded-4 list-inline-item position-relative">
                             <i class="fas fa-bag-shopping"></i>
 
                             <!-- Notifactions -->
@@ -229,278 +229,251 @@
             </nav>
         </header>
 
+        <!-- Shopping Cart Content -->
+        <main class="shoppingcart-content-wrap container py-4">
+            <div class="row gx-2 gy-4">
+                <section class="col-xl-9 col-lg-8">
+                    <div class="p-3 p-md-4 rounded-4 shopping-table">
+                        <h3>My Cart</h3>
+                        <!-- MY Cart Table Self -->
+                        <div class="table-responsive">
+                            <table class="table table-nowrap table-borderless align-middle">
 
-        <!-- Content Input -> Title -> Results -->
-        <div class="search-body-wrap">
-            <div class="container py-4">
-                <div class="row g-4">
-                    <!-- Input -->
-                    <div class="col-12">
-                        <div class="input-group input-group-lg border border-end-0 rounded-4 search-form-box">
-                            <span class="input-group-text bg-transparent rounded-4 rounded-start text-light-gray"><i
-                                    class="fas fa-search"></i></span>
-                            <input type="text" class="form-control border-0 ps-0 bg-transparent" placeholder="Search">
+                                <tr>
+                                    <!-- Product Info (img , title , category) -->
+                                    <td class="bg-white rounded-start">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div
+                                                class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
+                                                <img src="../../assets/img/home/blueberry.png" width="87"
+                                                    alt="blueberry bamboo">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h4>Vegetables box</h4>
+                                                <a href="#"
+                                                    class="text-decoration-underline text-black fw-light">Greens</a>
+                                            </div>
+                                        </div>
+                                    </td>
 
-                            <select class="form-select btn-primary rounded-4 w-fit flex-grow-0 fw-light cursor-pointer">
-                                <option value="products">Products</option>
-                                <option value="option">Option</option>
-                            </select>
+
+                                    <!-- Sizes -->
+                                    <td class="bg-white px-3">
+                                        <h5 class="fw-light">Sizes</h5>
+
+                                        <select name="sizes"
+                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
+                                            <option value="750g">750 g</option>
+                                            <option value="852g">852 g</option>
+                                        </select>
+                                    </td>
+
+                                    <!-- Quantity -->
+                                    <td class="bg-white px-3">
+                                        <h5 class="fw-light">Quantity</h5>
+
+                                        <div class="quantity-buttons input-group flex-nowrap">
+                                            <button class="btn rounded-4 minus">
+                                                <i class="fas fa-circle-minus"></i>
+                                            </button>
+                                            <input type="number"
+                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                                style="width: 30px;" value="1" placeholder="1" min="1">
+                                            <button class="btn rounded-4 plus">
+                                                <i class="fas fa-circle-plus"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+
+                                    <!-- Price -->
+                                    <td class="bg-white ">
+                                        <h5 class="fw-light">Price</h5>
+                                        <span class="text-primary display-omd fw-bold">15 KD</span>
+                                    </td>
+
+                                    <!-- Remove -->
+                                    <td class="align-top text-end bg-white rounded-end ps-5">
+                                        <button class="btn btn-secondary btn-sm rounded-4">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Product Info (img , title , category) -->
+                                    <td class="bg-white rounded-start">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="flex-shrink-0 rounded-4 p-3 bg-yellow  product-img me-2">
+                                                <img src="../../assets/img/home/mango.png" width="87"
+                                                    alt="blueberry bamboo">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h4>Vegetables box</h4>
+                                                <a href="#"
+                                                    class="text-decoration-underline text-black fw-light">Greens</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+                                    <!-- Sizes -->
+                                    <td class="bg-white px-3">
+                                        <h5 class="fw-light">Sizes</h5>
+
+                                        <select name="sizes"
+                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
+                                            <option value="750g">750 g</option>
+                                            <option value="852g">852 g</option>
+                                        </select>
+                                    </td>
+
+                                    <!-- Quantity -->
+                                    <td class="bg-white px-3">
+                                        <h5 class="fw-light">Quantity</h5>
+
+                                        <div class="quantity-buttons input-group flex-nowrap">
+                                            <button class="btn rounded-4 minus">
+                                                <i class="fas fa-circle-minus"></i>
+                                            </button>
+                                            <input type="number"
+                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                                style="width: 30px;" value="1" placeholder="1" min="1">
+                                            <button class="btn rounded-4 plus">
+                                                <i class="fas fa-circle-plus"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+
+                                    <!-- Price -->
+                                    <td class="bg-white ">
+                                        <h5 class="fw-light">Price</h5>
+                                        <span class="text-primary display-omd fw-bold">15 KD</span>
+                                    </td>
+
+                                    <!-- Remove -->
+                                    <td class="align-top text-end bg-white rounded-end ps-5">
+                                        <button class="btn btn-secondary btn-sm rounded-4">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Product Info (img , title , category) -->
+                                    <td class="bg-white rounded-start">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div
+                                                class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
+                                                <img src="../../assets/img/home/pineapple.png" width="87"
+                                                    alt="blueberry bamboo">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h4>Vegetables box</h4>
+                                                <a href="#"
+                                                    class="text-decoration-underline text-black fw-light">Greens</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+                                    <!-- Sizes -->
+                                    <td class="bg-white px-3">
+                                        <h5 class="fw-light">Sizes</h5>
+
+                                        <select name="sizes"
+                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
+                                            <option value="750g">750 g</option>
+                                            <option value="852g">852 g</option>
+                                        </select>
+                                    </td>
+
+                                    <!-- Quantity -->
+                                    <td class="bg-white px-3">
+                                        <h5 class="fw-light">Quantity</h5>
+
+                                        <div class="quantity-buttons input-group flex-nowrap">
+                                            <button class="btn rounded-4 minus">
+                                                <i class="fas fa-circle-minus"></i>
+                                            </button>
+                                            <input type="number"
+                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                                style="width: 30px;" value="1" placeholder="1" min="1">
+                                            <button class="btn rounded-4 plus">
+                                                <i class="fas fa-circle-plus"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+
+                                    <!-- Price -->
+                                    <td class="bg-white ">
+                                        <h5 class="fw-light">Price</h5>
+                                        <span class="text-primary display-omd fw-bold">15 KD</span>
+                                    </td>
+
+                                    <!-- Remove -->
+                                    <td class="align-top text-end bg-white rounded-end ps-5">
+                                        <button class="btn btn-secondary btn-sm rounded-4">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </table>
                         </div>
                     </div>
-                    <!-- Title -->
-                    <article class="col-12">
-                        <h3 class="mb-0">
-                            Search results
-                        </h3>
-                    </article>
-                    <!-- Products Result -->
-                    <div class="col-12">
-                        <div class="result-box p-3 p-md-4 rounded-4">
-                            <div class="row g-3">
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-primary bg-opacity-10 position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/blackberry-fruit.png"
-                                                    alt="blackberry fruit">
-                                            </div>
+                </section>
+                <aside class="col-xl-3 col-lg-4">
+                    <div class="p-3 p-md-4 rounded-4 h-100 shopping-summary">
+                        <h3 class="mb-4">Payment Summary:</h3>
 
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
+                        <!-- Summary -->
+                        <div class="row gx-0 gy-2">
+                            <!-- Summary Sub Total -->
+                            <p class="col-9">
+                                Subtotal
+                            </p>
+                            <p class="col-3 text-end">
+                                30 KD
+                            </p>
+                            <!-- Summary Delivery cost -->
+                            <p class="col-9">
+                                Delivery cost
+                            </p>
+                            <p class="col-3 text-end">
+                                2 KD
+                            </p>
 
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 purple position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/pomegranate.png"
-                                                    alt="pomegranate fruit">
-                                            </div>
-
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
-
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-yellow position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/mango.png"
-                                                    alt="mango fruit">
-                                            </div>
-
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
-
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-danger bg-opacity-25 position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/blueberry.png"
-                                                    alt="blueberry fruit">
-                                            </div>
-
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
-
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 purple position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/pomegranate.png"
-                                                    alt="pomegranate fruit">
-                                            </div>
-
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
-
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-yellow position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/mango.png"
-                                                    alt="mango fruit">
-                                            </div>
-
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
-
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-3 col-xl-4 col-md-6">
-                                    <div class="product-item card rounded-4 px-0 border-0">
-                                        <div class="card-body">
-                                            <!-- product img -->
-                                            <div
-                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-danger bg-opacity-25 position-relative">
-                                                <button
-                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
-                                                        class="fas fa-heart align-middle display-omd"></i></button>
-                                                <img class="img-fluid" src="../../assets/img/home/blueberry.png"
-                                                    alt="blueberry fruit">
-                                            </div>
-
-                                            <!-- Product header -->
-                                            <div class="px-2">
-                                                <a href="product-details.html" class="text-black">
-                                                    <article
-                                                        class="d-flex align-items-center justify-content-between my-2">
-                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
-                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
-                                                    </article>
-                                                </a>
-
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
-                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
-                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                        Add to cart
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <!-- Total -->
+                            <div class="d-flex justify-content-between gap-1 mt-4">
+                                <strong>
+                                    Total
+                                </strong>
+                                <strong>
+                                    32 KD
+                                </strong>
                             </div>
                         </div>
+
+
+                        <!-- Buy Now -->
+                        <div class="mt-5">
+                            <a href="select-address.html" class="btn btn-primary hv-bg-color rounded-4 btn-lg w-100">Buy
+                                now</a>
+
+                            <!-- Payment Methods -->
+                            <article class="mt-4">
+                                <h6 class=" display-omd fw-light">Payment methods:</h6>
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../../assets/img/payment-icons/mastercard.png" width="30"
+                                        alt="master card">
+                                    <img src="../../assets/img/payment-icons/visa.png" width="30" alt="visa card">
+                                    <img src="../../assets/img/payment-icons/kent.png" width="30" alt="kent card">
+                                </div>
+                            </article>
+
+                        </div>
                     </div>
-                </div>
+                </aside>
             </div>
-        </div>
+        </main>
 
     </div>
 
