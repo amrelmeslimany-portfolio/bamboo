@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo - Search</title>
+    <meta name="description" content="Bamboo is store for fruits" />
+    <meta name="keywords" content="fruits, bamboo, store, ecommerce">
+    <meta name="theme-color" content="#3A7F0D">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <!-- Fontawsome links -->
+    <link rel="stylesheet" href="../../css/libs/solid.css">
+    <link rel="stylesheet" href="../../css/libs/brands.css">
+    <link rel="stylesheet" href="../../css/libs/regular.css">
+    <link rel="stylesheet" href="../../css/libs/fontawesome.css">
+    <!-- Fontawsome links -->
+    <link rel="stylesheet" href="../../css/libs/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div
+        class="page-loading position-fixed top-0 start-0 w-100 h-100 align-items-center justify-content-center flex-column gap-2 bg-white">
+        <img src="../../assets/img/logo.png" class="load-img" alt="bamboo logo">
+        <span class="load-text text-primary display-omd">Loading...</span>
+    </div>
+
+
+
+    <!-- Content -->
+    <div class="wrap-fullpage">
+        <!-- 
+            * Main Header
+            ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+            ** Navbar
+            **** Logo 
+            **** Links
+            **** Search Favourite Cart Profile Languages
+            ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+            ** Intro
+         -->
+        <header id="main-header">
+
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+                <div class="container">
+                    <!-- Navbar Buttons -->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="../../assets/img/logo.png" alt="bamboo logo main" width="100">
+                    </a>
+                    <button class="navbar-toggler py-2 rounded-4 bg-primary border-0 ms-auto me-3" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+
+                    <!-- Settings Links (Favourite , profile , cart , search) -->
+                    <div class="features-list-buttons list-inline order-lg-1 me-sm-3">
+                        <!-- Search Input At Modal before the scripts tag -->
+                        <a href="search.html" class="btn hv-bg-color rounded-4 list-inline-item btn-secondary">
+                            <span class="d-none d-xl-inline">Search</span>
+                            <i class="fa fa-search ms-xl-1"></i>
+                        </a>
+                        <a href="favourite.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
+                            <i class="fa fa-heart "></i>
+                        </a>
+                        <a href="shopping-cart.html"
+                            class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
+                            <i class="fas fa-bag-shopping"></i>
+
+                            <!-- Notifactions -->
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle px-2 fw-bold badge rounded-circle bg-offline-color">
+                                3
+                            </span>
+                        </a>
+
+
+                        <!-- Form Signin / signup -->
+
+                        <div class="dropdown list-inline-item">
+                            <button class="dropdown-toggle w-100 h-100 hide-arrow btn btn-primary rounded-4 hv-bg-color"
+                                data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                                type="button">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+
+
+                            <div class="dropdown-menu dropdown-menu-end rounded-4 p-4" style="min-width: 360px;">
+                                <!-- Forms Buttons -->
+                                <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-4 active" id="pills-signin-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-signin" type="button"
+                                            role="tab" aria-controls="pills-signin" aria-selected="true">Sign
+                                            In</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link rounded-4" id="pills-signup-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-signup" type="button" role="tab"
+                                            aria-controls="pills-signup" aria-selected="false">Sign Up</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <!-- Sign in form -->
+                                    <div class="tab-pane fade show active" id="pills-signin" role="tabpanel"
+                                        aria-labelledby="pills-signin-tab">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="signin-email" class="form-label">Email</label>
+                                                <input type="email"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
+                                                    id="signin-email" placeholder="please enter your Email">
+                                            </div>
+                                            <div>
+                                                <label for="signin-password" class="form-label">Password</label>
+                                                <input type="password"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
+                                                    id="signin-password" placeholder="please enter your Password">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <a href="#"
+                                                    class="text-info text-decoration-underline display-sm ms-1">Forget
+                                                    your
+                                                    password?</a>
+                                            </div>
+                                            <div class="text-center py-sm-5">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">Sign
+                                                    In</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Sign Up form -->
+                                    <div class="tab-pane fade" id="pills-signup" role="tabpanel"
+                                        aria-labelledby="pills-signup-tab">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="signup-email" class="form-label">Email</label>
+                                                <input type="email"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
+                                                    id="signup-email" placeholder="please enter your Email">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signup-fullname" class="form-label">Fullname</label>
+                                                <input type="text"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
+                                                    id="signup-fullname" placeholder="please enter your Fullname">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signup-phonenumber" class="form-label">Phone number</label>
+                                                <input type="tel"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
+                                                    id="signup-phonenumber"
+                                                    placeholder="please enter your Phone number">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="signup-password" class="form-label">Password</label>
+                                                <input type="password"
+                                                    class="form-control rounded-4 border-primary shadow-lg"
+                                                    id="signup-password" placeholder="please enter your Password">
+                                            </div>
+
+                                            <div class="text-center py-sm-3">
+                                                <button type="submit"
+                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">Sign
+                                                    Up</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- Language Button -->
+                    <div class="language-menu dropdown order-lg-1">
+                        <button
+                            class="btn shadow-sm rounded-4 shadow-sm hide-arrow px-2 border border-light dropdown-toggle"
+                            type="button" id="languageDropdown" data-bs-toggle="dropdown">
+                            <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end rounded-4" aria-labelledby="languageDropdown">
+                            <li class="dropdown-item active">
+                                <img class="me-2" src="../../assets/img/langs-icons/en.png" width="25"
+                                    alt="english language bamboo">
+                                <span class="align-middle">EN</span>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="../ar/index.html">
+                                    <img class="me-2" src="../../assets/img/langs-icons/ar.png" width="25"
+                                        alt="arabic language bamboo">
+                                    <span class="align-middle">AR</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Links List  -->
+                    <div class="collapse navbar-collapse pt-2 py-0-lg" id="mainNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-1 me-xlg-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="about-us.html">About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4"
+                                    href="companies.html">Companies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="offers.html">offers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="contact-us.html">contact
+                                    us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Content Input -> Title -> Results -->
+        <div class="search-body-wrap">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <!-- Input -->
+                    <div class="col-12">
+                        <div class="input-group input-group-lg border border-end-0 rounded-4 search-form-box">
+                            <span class="input-group-text bg-transparent rounded-4 rounded-start text-light-gray"><i
+                                    class="fas fa-search"></i></span>
+                            <input type="text" class="form-control border-0 ps-0 bg-transparent" placeholder="Search">
+
+                            <select class="form-select btn-primary rounded-4 w-fit flex-grow-0 fw-light cursor-pointer">
+                                <option value="products">Products</option>
+                                <option value="option">Option</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Title -->
+                    <article class="col-12">
+                        <h3 class="mb-0">
+                            Search results
+                        </h3>
+                    </article>
+                    <!-- Products Result -->
+                    <div class="col-12">
+                        <div class="result-box p-3 p-md-4 rounded-4">
+                            <div class="row g-3">
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-primary bg-opacity-10 position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/blackberry-fruit.png"
+                                                    alt="blackberry fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 purple position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/pomegranate.png"
+                                                    alt="pomegranate fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-yellow position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/mango.png"
+                                                    alt="mango fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-danger bg-opacity-25 position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/blueberry.png"
+                                                    alt="blueberry fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 purple position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/pomegranate.png"
+                                                    alt="pomegranate fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-yellow position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/mango.png"
+                                                    alt="mango fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-3 col-xl-4 col-md-6">
+                                    <div class="product-item card rounded-4 px-0 border-0">
+                                        <div class="card-body">
+                                            <!-- product img -->
+                                            <div
+                                                class="card-img-top rounded-4 text-center py-4 px-5 bg-danger bg-opacity-25 position-relative">
+                                                <button
+                                                    class="btn btn-secondary rounded-4 px-2 position-absolute favourite-btn"><i
+                                                        class="fas fa-heart align-middle display-omd"></i></button>
+                                                <img class="img-fluid" src="../../assets/img/home/blueberry.png"
+                                                    alt="blueberry fruit">
+                                            </div>
+
+                                            <!-- Product header -->
+                                            <div class="px-2">
+                                                <a href="product-details.html" class="text-black">
+                                                    <article
+                                                        class="d-flex align-items-center justify-content-between my-2">
+                                                        <h5 class="mb-0 searched-word-bg-color">Greens</h5>
+                                                        <span class="ms-2 flex-shrink-0">15 KD</span>
+                                                    </article>
+                                                </a>
+
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <span class="text-black-50 me-2 text-truncate">Saba Company</span>
+                                                    <button class="btn btn-primary rounded-4 flex-shrink-0">
+                                                        <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                        Add to cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-5">
+        <!-- upper -->
+        <div class="container">
+            <div class="row g-4 pb-5">
+                <div class="col-xl-4 col-lg-5 col-md-6">
+                    <a href="index.html">
+                        <img src="../../assets/img/logo.png" width="130" alt="bamboo logo">
+                    </a>
+                    <p class="my-4 lead display-omd">
+                        We care about the smallest details and components because we strive to achieve the perfect
+                        balance for every human being "body and soul"
+                    </p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <img src="../../assets/img/social/black-instagram.png" width="25"
+                                    alt="bamboo instagram">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <img src="../../assets/img/social/whatsapp.png" width="25" alt="bamboo whatsapp">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 offset-xl-1 col-md-6">
+                    <ul class="nav flex-column footer-links">
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-capitalize" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-capitalize" href="companies.html">Companies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-capitalize" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-capitalize" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black text-capitalize" href="join-us.html">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <section>
+                        <h5 class="mb-4">Send message for bamboo</h5>
+                        <form>
+                            <div class="mb-2">
+                                <input type="text" name="email" class="form-control rounded-4 form-control-lg"
+                                    placeholder="Email">
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row gap-3">
+                                <textarea name="message" rows="3" class="form-control rounded-4 form-control-lg"
+                                    style="resize: none;" placeholder="Message"></textarea>
+                                <button type="submit"
+                                    class="btn btn-primary display-omd flex-shrink-0 rounded-4 px-5">Send</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- down -->
+        <div class="bg-secondary text-white py-2 text-center text-md-start mb-5 mb-sm-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-md-0 display-sm">
+                            Copyright © 2010-2022 <strong>Bamboo Company</strong> S.L. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-end">
+                            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-end">
+                                <a href="tel:+9712589632589" class="me-sm-2 text-white display-sm">+971
+                                    258-963-2589</a>
+                                <a href="mailto:bamboo@gmail.com"
+                                    class="text-decoration-underline text-white display-sm">bamboo@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <!-- !Note: Bootstrap doesnt depend on jquery -->
+    <script src="../../js/libs/bootstrap.bundle.min.js"></script>
+    <script src="../../js/libs/jquery-3.5.1.min.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

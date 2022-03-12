@@ -1,9 +1,7 @@
 $(function () {
   // All Vars
   const loading = $(".page-loading");
-  const languageMenu = $(".language-menu");
   const mainHeader = $("#main-header");
-  const mainFooter = $("footer");
   const PUBLIC_SETTING_CAROUSEL = (other) => ({
     autoWidth: true,
     margin: 30,
@@ -16,35 +14,55 @@ $(function () {
     $(this).remove();
   });
 
+  // Add to body, padding top because the navbar and the alert if founded
+  $("body").css("padding-top", bodyPaddingTop() + "px");
+
   // Categories carousel at home page
-  $(".categories-swiper").owlCarousel({
-    ...PUBLIC_SETTING_CAROUSEL({
-      responsive: {
-        0: {
-          loop: true,
-          center: true,
+  if ($(".categories-swiper").length) {
+    $(".categories-swiper").owlCarousel({
+      ...PUBLIC_SETTING_CAROUSEL({
+        responsive: {
+          0: {
+            loop: true,
+            center: true,
+          },
+          768: {
+            center: false,
+            loop: false,
+          },
         },
-        768: {
-          center: false,
-          loop: false,
-        },
-      },
-    }),
-  });
+      }),
+    });
+  }
 
   // Best Products At Home page
-  $(".best-products-swiper").owlCarousel({
-    ...PUBLIC_SETTING_CAROUSEL({
-      responsive: {
-        0: {
-          loop: true,
-          center: true,
+  if ($(".best-products-swiper").length) {
+    $(".best-products-swiper").owlCarousel({
+      ...PUBLIC_SETTING_CAROUSEL({
+        responsive: {
+          0: {
+            loop: true,
+            center: true,
+          },
+          768: {
+            center: false,
+            loop: false,
+          },
         },
-        768: {
-          center: false,
-          loop: false,
-        },
-      },
-    }),
-  });
+      }),
+    });
+  }
+
+  // Public functions
+  function bodyPaddingTop() {
+    let navbarHeight = mainHeader.find("nav.navbar").innerHeight();
+    let navbarAlert = mainHeader.find(".alert");
+
+    // Check if alerts in navbar
+    if (navbarAlert.length) {
+      return navbarHeight + navbarAlert.innerHeight();
+    } else {
+      return navbarHeight;
+    }
+  }
 });
