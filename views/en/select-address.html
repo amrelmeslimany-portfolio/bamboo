@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo - Shopping Cart</title>
+    <title>Bamboo - Select Address</title>
     <meta name="description" content="Bamboo is store for fruits" />
     <meta name="keywords" content="fruits, bamboo, store, ecommerce">
     <meta name="theme-color" content="#3A7F0D">
@@ -229,257 +229,192 @@
             </nav>
         </header>
 
-        <!-- Shopping Cart Content -->
-        <main class="shoppingcart-content-wrap container py-4">
-            <div class="row gx-2 gy-4">
-                <section class="col-xl-9 col-lg-8">
-                    <div class="p-3 p-md-4 rounded-4 shopping-table">
-                        <h3>My Cart</h3>
-                        <!-- MY Cart Table Self -->
-                        <div class="table-responsive">
-                            <table class="table table-nowrap table-borderless align-middle">
+        <!-- 
+            * Select Address after shopping cart page Content
+            ** Progress steps
+            ** Title and add new address link
+            ** table of addresses with module for update the address
 
-                                <tr>
-                                    <!-- Product Info (img , title , category) -->
-                                    <td class="bg-white rounded-start">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div
-                                                class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
-                                                <img src="../../assets/img/home/blueberry.png" width="87"
-                                                    alt="blueberry bamboo">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h4>Vegetables box</h4>
-                                                <a href="#"
-                                                    class="text-decoration-underline text-black fw-light">Greens</a>
-                                            </div>
-                                        </div>
-                                    </td>
+            ! Note:
+            --- when click on edit button to edit address there is a modal will open this modal is before scripts tag below
+         -->
 
-
-                                    <!-- Sizes -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Sizes</h5>
-
-                                        <select name="sizes"
-                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
-                                            <option value="750g">750 g</option>
-                                            <option value="852g">852 g</option>
-                                        </select>
-                                    </td>
-
-                                    <!-- Quantity -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Quantity</h5>
-
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button class="btn rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
-                                            </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button class="btn rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-
-                                    <!-- Price -->
-                                    <td class="bg-white ">
-                                        <h5 class="fw-light">Price</h5>
-                                        <span class="text-primary display-omd fw-bold">15 KD</span>
-                                    </td>
-
-                                    <!-- Remove -->
-                                    <td class="align-top text-end bg-white rounded-end ps-5">
-                                        <button class="btn btn-secondary btn-sm rounded-4">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Product Info (img , title , category) -->
-                                    <td class="bg-white rounded-start">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="flex-shrink-0 rounded-4 p-3 bg-yellow  product-img me-2">
-                                                <img src="../../assets/img/home/mango.png" width="87"
-                                                    alt="blueberry bamboo">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h4>Vegetables box</h4>
-                                                <a href="#"
-                                                    class="text-decoration-underline text-black fw-light">Greens</a>
-                                            </div>
-                                        </div>
-                                    </td>
+        <main class="selectaddress-content-wrap container py-4">
+            <div class="rounded-4 p-3 p-md-4">
+                <!-- Steps Bar -->
+                <ul class="nav justify-content-center mb-4 steps-progress">
+                    <li class="nav-item success-checked">
+                        <span class="step ">
+                            Add products to cart
+                        </span>
+                        <i class="fas fa-check-circle"></i>
+                    </li>
+                    <li class="nav-item current-check">
+                        <span class="step ">
+                            Select address
+                        </span>
+                        <i class="fas fa-2 number-style"></i>
+                    </li>
+                    <li class="nav-item">
+                        <span class="step ">
+                            Select payment methods
+                        </span>
+                        <i class="fas fa-3 number-style"></i>
+                    </li>
+                    <li class="nav-item">
+                        <span class="step ">
+                            Complet order
+                        </span>
+                    </li>
+                </ul>
 
 
-                                    <!-- Sizes -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Sizes</h5>
-
-                                        <select name="sizes"
-                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
-                                            <option value="750g">750 g</option>
-                                            <option value="852g">852 g</option>
-                                        </select>
-                                    </td>
-
-                                    <!-- Quantity -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Quantity</h5>
-
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button class="btn rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
-                                            </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button class="btn rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-
-                                    <!-- Price -->
-                                    <td class="bg-white ">
-                                        <h5 class="fw-light">Price</h5>
-                                        <span class="text-primary display-omd fw-bold">15 KD</span>
-                                    </td>
-
-                                    <!-- Remove -->
-                                    <td class="align-top text-end bg-white rounded-end ps-5">
-                                        <button class="btn btn-secondary btn-sm rounded-4">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Product Info (img , title , category) -->
-                                    <td class="bg-white rounded-start">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div
-                                                class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
-                                                <img src="../../assets/img/home/pineapple.png" width="87"
-                                                    alt="blueberry bamboo">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h4>Vegetables box</h4>
-                                                <a href="#"
-                                                    class="text-decoration-underline text-black fw-light">Greens</a>
-                                            </div>
-                                        </div>
-                                    </td>
-
-
-                                    <!-- Sizes -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Sizes</h5>
-
-                                        <select name="sizes"
-                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
-                                            <option value="750g">750 g</option>
-                                            <option value="852g">852 g</option>
-                                        </select>
-                                    </td>
-
-                                    <!-- Quantity -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Quantity</h5>
-
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button class="btn rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
-                                            </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button class="btn rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-
-                                    <!-- Price -->
-                                    <td class="bg-white ">
-                                        <h5 class="fw-light">Price</h5>
-                                        <span class="text-primary display-omd fw-bold">15 KD</span>
-                                    </td>
-
-                                    <!-- Remove -->
-                                    <td class="align-top text-end bg-white rounded-end ps-5">
-                                        <button class="btn btn-secondary btn-sm rounded-4">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-                    </div>
+                <!-- Select Address -->
+                <section class="d-flex justify-content-between gap-1 align-items-center flex-wrap mb-3">
+                    <h4 class="mb-0">Select address</h4>
+                    <a href="add-new-address.html" class="btn btn-secondary rounded-4">Add new address</a>
                 </section>
-                <aside class="col-xl-3 col-lg-4">
-                    <div class="p-3 p-md-4 rounded-4 h-100 shopping-summary">
-                        <h3 class="mb-4">Payment Summary:</h3>
 
-                        <!-- Coupon Code -->
-                        <div>
-                            <h6 class="form-text">Coupon Code?</h6>
-                            <input type="text" class="form-control rounded-4" placeholder="Coupon Code">
+                <!-- Addresses -->
+                <ul class="list-unstyled">
+                    <!-- Address One -->
+                    <li class="mb-3 d-flex gap-1">
+                        <!-- Select -->
+                        <div class="form-check flex-shrink-0 pt-3">
+                            <input class="form-check-input" type="radio" name="address" checked>
                         </div>
 
-                        <hr class="my-3">
-
-                        <!-- Summary -->
-                        <div class="row gx-0 gy-2">
-                            <!-- Summary Sub Total -->
-                            <p class="col-9">
-                                Subtotal
-                            </p>
-                            <p class="col-3 text-end">
-                                30 KD
-                            </p>
-                            <!-- Summary Delivery cost -->
-                            <p class="col-9">
-                                Delivery cost
-                            </p>
-                            <p class="col-3 text-end">
-                                2 KD
-                            </p>
-
-                            <!-- Total -->
-                            <div class="d-flex justify-content-between gap-1 mt-4">
-                                <strong>
-                                    Total
-                                </strong>
-                                <strong>
-                                    32 KD
-                                </strong>
+                        <div class="bg-white rounded-4 p-3 flex-grow-1">
+                            <div class="row gy-2 g-0">
+                                <div class="col-12">
+                                    <p class="d-inline-block"><strong>Country: Palestine </strong></p>
+                                    <div class="float-end">
+                                        <i class="fas fa-star align-middle me-2"></i>
+                                        <button class="btn btn-primary btn-sm rounded-4" data-bs-toggle="modal"
+                                            data-bs-target="#editAddress">
+                                            <i class="fas fa-pencil"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <p>Governorate: Gaza</p>
+                                    <p>Home Number: 15585</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Area: Area1</p>
+                                    <p>Avenue: avenue1</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Block: block1</p>
+                                    <p>Housing type: House</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Street: street</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="mb-0">
+                                        <strong>Additional direction:</strong> Near Al Amal Supermarket
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-
-                        <!-- Buy Now -->
-                        <div class="mt-5">
-                            <a href="select-address.html" class="btn btn-primary hv-bg-color rounded-4 btn-lg w-100">Buy
-                                now</a>
-
-                            <!-- Payment Methods -->
-                            <article class="mt-4">
-                                <h6 class=" display-omd fw-light">Payment methods:</h6>
-                                <div class="d-flex align-items-center gap-2">
-                                    <img src="../../assets/img/payment-icons/mastercard.png" width="30"
-                                        alt="master card">
-                                    <img src="../../assets/img/payment-icons/visa.png" width="30" alt="visa card">
-                                    <img src="../../assets/img/payment-icons/kent.png" width="30" alt="kent card">
-                                </div>
-                            </article>
-
+                    </li>
+                    <!-- Address Two -->
+                    <li class="mb-3 d-flex gap-1">
+                        <!-- Select -->
+                        <div class="form-check flex-shrink-0 pt-3">
+                            <input class="form-check-input" type="radio" name="address">
                         </div>
-                    </div>
-                </aside>
+
+                        <div class="bg-white rounded-4 p-3 flex-grow-1">
+                            <div class="row gy-2 g-0">
+                                <div class="col-12">
+                                    <p class="d-inline-block"><strong>Country: Palestine </strong></p>
+                                    <div class="float-end">
+
+                                        <button class="btn btn-primary btn-sm rounded-4" data-bs-toggle="modal"
+                                            data-bs-target="#editAddress">
+                                            <i class="fas fa-pencil"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <p>Governorate: Gaza</p>
+                                    <p>Home Number: 15585</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Area: Area1</p>
+                                    <p>Avenue: avenue1</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Block: block1</p>
+                                    <p>Housing type: House</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Street: street</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="mb-0">
+                                        <strong>Additional direction:</strong> Near Al Amal Supermarket
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!-- Address Three -->
+                    <li class="mb-3 d-flex gap-1">
+                        <!-- Select -->
+                        <div class="form-check flex-shrink-0 pt-3">
+                            <input class="form-check-input" type="radio" name="address">
+                        </div>
+
+                        <div class="bg-white rounded-4 p-3 flex-grow-1">
+                            <div class="row gy-2 g-0">
+                                <div class="col-12">
+                                    <p class="d-inline-block"><strong>Country: Palestine </strong></p>
+                                    <div class="float-end">
+
+                                        <button class="btn btn-primary btn-sm rounded-4" data-bs-toggle="modal"
+                                            data-bs-target="#editAddress">
+                                            <i class="fas fa-pencil"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <p>Governorate: Gaza</p>
+                                    <p>Home Number: 15585</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Area: Area1</p>
+                                    <p>Avenue: avenue1</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Block: block1</p>
+                                    <p>Housing type: House</p>
+                                </div>
+                                <div class="col-md">
+                                    <p>Street: street</p>
+                                </div>
+                                <div class="col-12">
+                                    <p class="mb-0">
+                                        <strong>Additional direction:</strong> Near Al Amal Supermarket
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+
+
+                <!-- Next Button -->
+                <div class="mt-1 ms-4 ps-1">
+                    <a href="select-payment.html" class="btn btn-primary rounded-4 px-4">
+                        Next
+                    </a>
+                </div>
             </div>
         </main>
 
@@ -577,6 +512,76 @@
         </div>
     </footer>
 
+
+
+    <!-- Update or Edit The selected address -->
+    <!-- Modal -->
+    <div class="modal fade" id="editAddress" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-4 border-0">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title" id="editAddressLabel">Edit Address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body py-0">
+                        <div class="mb-3">
+                            <label for="countryLabel" class="form-label">Country</label>
+                            <input type="text" name="country" id="countryLabel" class="form-control rounded-4"
+                                value="Palestine">
+                        </div>
+                        <div class="mb-3">
+                            <label for="governorateLabel" class="form-label">Governorate</label>
+                            <input type="text" name="governorate" id="governorateLabel" class="form-control rounded-4"
+                                value="Gaza">
+                        </div>
+                        <div class="mb-3">
+                            <label for="areaLabel" class="form-label">Area</label>
+                            <input type="text" name="area" id="areaLabel" class="form-control rounded-4" value="Area1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="blockLabel" class="form-label">Block</label>
+                            <input type="text" name="block" id="blockLabel" class="form-control rounded-4"
+                                value="Block1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="streetLabel" class="form-label">Street</label>
+                            <input type="text" name="street" id="streetLabel" class="form-control rounded-4"
+                                value="street1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="avenueLabel" class="form-label">Avenue</label>
+                            <input type="text" name="avenue" id="avenueLabel" class="form-control rounded-4"
+                                value="avenue1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="housingTypeLabel" class="form-label">Housing Type</label>
+                            <input type="text" name="housingType" id="housingTypeLabel" class="form-control rounded-4"
+                                value="housingType1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="homenumberLabel" class="form-label">Home Number</label>
+                            <input type="text" name="homenumber" id="homenumberLabel" class="form-control rounded-4"
+                                value="15585">
+                        </div>
+                        <div class="mb-3">
+                            <label for="addationalDircetionLabel" class="form-label">Additional Direction</label>
+                            <input type="text" name="addationalDircetion" id="addationalDircetionLabel"
+                                class="form-control rounded-4" value="Near Al Amal Supermarket">
+                        </div>
+                    </div>
+
+
+                    <!-- Submit Button -->
+
+                    <div class="modal-footer border-top-0 justify-content-center">
+                        <button type="submit" class="btn btn-primary rounded-4 px-4">Save</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <!-- !Note: Bootstrap doesnt depend on jquery -->
