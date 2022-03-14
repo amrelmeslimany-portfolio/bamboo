@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo - Add New Address</title>
+    <title>Bamboo - Select Payment Method</title>
     <meta name="description" content="Bamboo is store for fruits" />
     <meta name="keywords" content="fruits, bamboo, store, ecommerce">
     <meta name="theme-color" content="#3A7F0D">
@@ -246,19 +246,19 @@
                         </span>
                         <i class="fas fa-check-circle"></i>
                     </li>
-                    <li class="nav-item current-check">
+                    <li class="nav-item success-checked">
                         <span class="step ">
                             Select address
                         </span>
-                        <i class="fas fa-2 number-style"></i>
+                        <i class="fas fa-check-circle"></i>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item success-checked ">
                         <span class="step ">
                             Select payment methods
                         </span>
-                        <i class="fas fa-3 number-style"></i>
+                        <i class="fas fa-check-circle"></i>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item current-check success-checked">
                         <span class="step ">
                             Complet order
                         </span>
@@ -267,66 +267,25 @@
 
 
                 <!-- Select Address -->
-                <section>
-                    <h4>Add new address</h4>
+                <section class="text-center py-5">
+                    <h3 class="mb-3">Your order is complete!</h3>
 
-                    <!-- Form -->
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="countryLabel" class="form-label">Country</label>
-                                <input type="text" name="country" id="countryLabel" class="form-control rounded-4"
-                                    placeholder="EX: Palestine">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="governorateLabel" class="form-label">Governorate</label>
-                                <input type="text" name="governorate" id="governorateLabel"
-                                    class="form-control rounded-4" placeholder="EX: Gaza">
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="areaLabel" class="form-label">Area</label>
-                                <input type="text" name="area" id="areaLabel" class="form-control rounded-4"
-                                    placeholder="EX: Area1">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="blockLabel" class="form-label">Block</label>
-                                <input type="text" name="block" id="blockLabel" class="form-control rounded-4"
-                                    placeholder="EX: Block1">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="streetLabel" class="form-label">Street</label>
-                                <input type="text" name="street" id="streetLabel" class="form-control rounded-4"
-                                    placeholder="EX: street1">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="avenueLabel" class="form-label">Avenue</label>
-                                <input type="text" name="avenue" id="avenueLabel" class="form-control rounded-4"
-                                    placeholder="EX: avenue1">
-                            </div>
+                    <!-- Complete order -->
+                    <div class="rounded-4 bg-light-primary p-3 text-start w-lg-30 w-md-50 w-sm-70 mx-auto">
+                        <p>Order number:451258</p>
+                        <p>02/27/2022, 07:31pm</p>
+                        <div class="d-flex justify-content-between gap-2 my-2">
+                            <strong>Total: 36 KD</strong>
+                            <img src="../../assets/img/payment-icons/visa.png" alt="visa payment">
                         </div>
+                        <a href="#" class="text-black text-decoration-underline">View invoice</a>
+                    </div>
 
-
-
-                        <div class="my-3">
-                            <label for="housingTypeLabel" class="form-label">Housing Type</label>
-                            <input type="text" name="housingType" id="housingTypeLabel" class="form-control rounded-4"
-                                placeholder="EX: housingType1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="addationalDircetionLabel" class="form-label">Additional Direction</label>
-                            <textarea name="addationalDircetion" id="addationalDircetionLabel" rows="5"
-                                style="resize: none;" class="form-control rounded-4"
-                                placeholder="EX: Near Al Amal Supermarket"></textarea>
-                        </div>
-
-                        <!-- Save Button -->
-                        <div>
-                            <button type="submit" class="btn btn-primary rounded-4 px-4">
-                                Save
-                            </button>
-                        </div>
-                    </form>
+                    <div class="text-center mt-3">
+                        <a href="index.html" class="btn btn-primary rounded-4 px-4">
+                            Return to Home
+                        </a>
+                    </div>
                 </section>
             </div>
         </main>
@@ -425,75 +384,6 @@
         </div>
     </footer>
 
-
-
-    <!-- Update or Edit The selected address -->
-    <!-- Modal -->
-    <div class="modal fade" id="editAddress" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-4 border-0">
-                <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="editAddressLabel">Edit Address</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form>
-                    <div class="modal-body py-0">
-                        <div class="mb-3">
-                            <label for="countryLabel" class="form-label">Country</label>
-                            <input type="text" name="country" id="countryLabel" class="form-control rounded-4"
-                                value="Palestine">
-                        </div>
-                        <div class="mb-3">
-                            <label for="governorateLabel" class="form-label">Governorate</label>
-                            <input type="text" name="governorate" id="governorateLabel" class="form-control rounded-4"
-                                value="Gaza">
-                        </div>
-                        <div class="mb-3">
-                            <label for="areaLabel" class="form-label">Area</label>
-                            <input type="text" name="area" id="areaLabel" class="form-control rounded-4" value="Area1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="blockLabel" class="form-label">Block</label>
-                            <input type="text" name="block" id="blockLabel" class="form-control rounded-4"
-                                value="Block1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="streetLabel" class="form-label">Street</label>
-                            <input type="text" name="street" id="streetLabel" class="form-control rounded-4"
-                                value="street1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="avenueLabel" class="form-label">Avenue</label>
-                            <input type="text" name="avenue" id="avenueLabel" class="form-control rounded-4"
-                                value="avenue1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="housingTypeLabel" class="form-label">Housing Type</label>
-                            <input type="text" name="housingType" id="housingTypeLabel" class="form-control rounded-4"
-                                value="housingType1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="homenumberLabel" class="form-label">Home Number</label>
-                            <input type="text" name="homenumber" id="homenumberLabel" class="form-control rounded-4"
-                                value="15585">
-                        </div>
-                        <div class="mb-3">
-                            <label for="addationalDircetionLabel" class="form-label">Additional Direction</label>
-                            <input type="text" name="addationalDircetion" id="addationalDircetionLabel"
-                                class="form-control rounded-4" value="Near Al Amal Supermarket">
-                        </div>
-                    </div>
-
-
-                    <!-- Submit Button -->
-
-                    <div class="modal-footer border-top-0 justify-content-center">
-                        <button type="submit" class="btn btn-primary rounded-4 px-4">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
     <!-- Scripts -->
     <!-- !Note: Bootstrap doesnt depend on jquery -->

@@ -4,6 +4,10 @@ $(function () {
   const mainHeader = $("#main-header");
   const quantityButtons = $(".quantity-buttons");
 
+  // select payment methods vars
+  const paymentMethods = $(".payment-methods .list-group-item");
+  const nextAfterSelectPayment = $(".toggle-next-btn");
+
   const PUBLIC_SETTING_CAROUSEL = (other) => ({
     autoWidth: true,
     margin: 30,
@@ -56,6 +60,7 @@ $(function () {
   }
 
   // Shopping Cart Page
+  // quantity
   if (quantityButtons.length) {
     quantityButtons.each(function () {
       let [minus, input, plus] = [
@@ -79,6 +84,16 @@ $(function () {
         inputVal += 1;
         input.val(inputVal);
       });
+    });
+  }
+
+  // select payment page
+  if (paymentMethods.length) {
+    paymentMethods.click(function () {
+      $(this).addClass("active");
+
+      $(this).siblings().removeClass("active");
+      nextAfterSelectPayment.show(200);
     });
   }
 
