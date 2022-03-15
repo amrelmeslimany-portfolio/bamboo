@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo - Select Payment Method</title>
+    <title>Bamboo - About Us</title>
     <meta name="description" content="Bamboo is store for fruits" />
     <meta name="keywords" content="fruits, bamboo, store, ecommerce">
     <meta name="theme-color" content="#3A7F0D">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../../css/libs/regular.css">
     <link rel="stylesheet" href="../../css/libs/fontawesome.css">
     <!-- Fontawsome links -->
+    <link rel="stylesheet" href="../../css/libs/owl.carousel.css">
     <link rel="stylesheet" href="../../css/libs/bootstrap.css">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -60,7 +61,7 @@
                     <!-- Settings Links (Favourite , profile , cart , search) -->
                     <div class="features-list-buttons list-inline order-lg-1 me-sm-3">
                         <!-- Search Input At Modal before the scripts tag -->
-                        <a href="search.html" class="btn hv-bg-color rounded-4 list-inline-item btn-primary">
+                        <a href="search.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <span class="d-none d-xl-inline">Search</span>
                             <i class="fa fa-search ms-xl-1"></i>
                         </a>
@@ -68,7 +69,7 @@
                             <i class="fa fa-heart "></i>
                         </a>
                         <a href="shopping-cart.html"
-                            class="btn btn-secondary rounded-4 list-inline-item position-relative">
+                            class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
                             <i class="fas fa-bag-shopping"></i>
 
                             <!-- Notifactions -->
@@ -193,7 +194,7 @@
                                 <span class="align-middle">EN</span>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="../ar/index.html">
+                                <a class="dropdown-item" href="../ar/about-us.html">
                                     <img class="me-2" src="../../assets/img/langs-icons/ar.png" width="25"
                                         alt="arabic language bamboo">
                                     <span class="align-middle">AR</span>
@@ -209,7 +210,8 @@
                                 <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="about-us.html">About
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
+                                    href="about-us.html">About
                                     Us</a>
                             </li>
                             <li class="nav-item">
@@ -227,69 +229,43 @@
                     </div>
                 </div>
             </nav>
-        </header>
-
-        <!-- 
-            * Select Address after shopping cart page Content
-            ** Progress steps
-            ** title
-            ** Add Address form
-         -->
-
-        <main class="selectaddress-content-wrap container py-4">
-            <div class="rounded-4 p-3 p-md-4">
-                <!-- Steps Bar -->
-                <ul class="nav justify-content-center mb-4 steps-progress">
-                    <li class="nav-item success-checked">
-                        <span class="step ">
-                            Add products to cart
-                        </span>
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                    <li class="nav-item success-checked">
-                        <span class="step ">
-                            Select address
-                        </span>
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                    <li class="nav-item success-checked ">
-                        <span class="step ">
-                            Select payment methods
-                        </span>
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                    <li class="nav-item current-check">
-                        <span class="step ">
-                            Complet order
-                        </span>
-                    </li>
-                </ul>
 
 
-                <!-- Select Address -->
-                <section class="text-center py-5">
-                    <h3 class="mb-3">Your order is complete!</h3>
+            <div class="container">
 
-                    <!-- Complete order -->
-                    <div class="rounded-4 bg-light-primary p-3 text-start w-lg-30 w-md-50 w-sm-70 mx-auto">
-                        <p>Order number:451258</p>
-                        <p>02/27/2022, 07:31pm</p>
-                        <div class="d-flex justify-content-between gap-2 my-2">
-                            <strong>Total: 36 KD</strong>
-                            <img src="../../assets/img/payment-icons/visa.png" alt="visa payment">
-                        </div>
-                        <a href="#" class="text-black text-decoration-underline">View invoice</a>
+                <section class="row g-4 py-5">
+
+                    <div class="col-lg-6">
+                        <img src="../../assets/img/home/about-header.png" class="img-fluid" alt="about header fruit">
                     </div>
 
-                    <div class="text-center mt-3">
-                        <a href="index.html" class="btn btn-primary rounded-4 px-4">
-                            Return to Home
+
+                    <div class="col-lg-6">
+                        <h1 class="main-header-title fw-bold mb-0 display-6">
+                            <span class="text-bg"> At Bamboo</span> we believe that healthy, mess-free food is what
+                            every human deserves.
+                        </h1>
+
+                        <p class="lead my-3">
+                            Through Bamboo we strive to offer the best choices and the purest ingredients that nourish
+                            the body and soul.
+                            We are keen to select for you the best that God has given us.
+                        </p>
+
+                        <h6 class="h4 text-primary text-opacity-75 mb-3">Together we feed on instinct.</h6>
+
+                        <a href="products.html" class="btn btn-secondary customed-rounded text-capitalize px-3">
+                            Go to products
+                            <i class="fas fa-arrow-right-long align-middle ms-2"></i>
                         </a>
                     </div>
+
+
+
                 </section>
             </div>
-        </main>
 
+        </header>
     </div>
 
     <!-- Footer -->
@@ -325,7 +301,7 @@
                             <a class="nav-link text-capitalize" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="about-us.html">About Us</a>
+                            <a class="nav-link text-black text-capitalize active" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black text-capitalize" href="companies.html">Companies</a>

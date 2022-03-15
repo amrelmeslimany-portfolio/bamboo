@@ -8,12 +8,23 @@ $(function () {
   const paymentMethods = $(".payment-methods .list-group-item");
   const nextAfterSelectPayment = $(".toggle-next-btn");
 
-  const PUBLIC_SETTING_CAROUSEL = (other) => ({
+  // Carousel Settings Vars
+  const PUBLIC_SETTING_CAROUSEL = (margin = 30, other) => ({
     autoWidth: true,
-    margin: 30,
+    margin,
     dots: false,
     ...other,
   });
+  const RESPONSIVE_CAROUSEL = {
+    0: {
+      loop: true,
+      center: true,
+    },
+    768: {
+      center: false,
+      loop: false,
+    },
+  };
 
   // Handle Loading page
   loading.hide(100, function () {
@@ -26,17 +37,8 @@ $(function () {
   // Categories carousel at home page
   if ($(".categories-swiper").length) {
     $(".categories-swiper").owlCarousel({
-      ...PUBLIC_SETTING_CAROUSEL({
-        responsive: {
-          0: {
-            loop: true,
-            center: true,
-          },
-          768: {
-            center: false,
-            loop: false,
-          },
-        },
+      ...PUBLIC_SETTING_CAROUSEL(30, {
+        responsive: RESPONSIVE_CAROUSEL,
       }),
     });
   }
@@ -44,18 +46,17 @@ $(function () {
   // Best Products At Home page
   if ($(".best-products-swiper").length) {
     $(".best-products-swiper").owlCarousel({
-      ...PUBLIC_SETTING_CAROUSEL({
-        responsive: {
-          0: {
-            loop: true,
-            center: true,
-          },
-          768: {
-            center: false,
-            loop: false,
-          },
-        },
+      ...PUBLIC_SETTING_CAROUSEL(30, {
+        responsive: RESPONSIVE_CAROUSEL,
       }),
+    });
+  }
+
+  // Companies Page
+  // Carousel for companies categories
+  if ($(".companies-carousel").length) {
+    $(".companies-carousel").owlCarousel({
+      ...PUBLIC_SETTING_CAROUSEL(15),
     });
   }
 
