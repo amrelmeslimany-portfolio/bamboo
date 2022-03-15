@@ -88,6 +88,16 @@ $(function () {
     });
   }
 
+  // Address
+  if ($(".custom-select").length) {
+    $(".wrap-input").each(function () {
+      $(".custom-select").select2({
+        dropdownParent: $(this),
+        width: "100%",
+      });
+    });
+  }
+
   // select payment page
   if (paymentMethods.length) {
     paymentMethods.click(function () {
