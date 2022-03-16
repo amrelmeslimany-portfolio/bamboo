@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo - Add New Address</title>
+    <title>Bamboo - Contact Us</title>
     <meta name="description" content="Bamboo is store for fruits" />
     <meta name="keywords" content="fruits, bamboo, store, ecommerce">
     <meta name="theme-color" content="#3A7F0D">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../css/libs/regular.css">
     <link rel="stylesheet" href="../../css/libs/fontawesome.css">
     <!-- Fontawsome links -->
-    <link rel="stylesheet" href="../../css/libs/select2.css">
     <link rel="stylesheet" href="../../css/libs/bootstrap.css">
     <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -45,7 +44,6 @@
             ** Intro
          -->
         <header id="main-header">
-
             <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
                 <div class="container">
                     <!-- Navbar Buttons -->
@@ -69,7 +67,7 @@
                             <i class="fa fa-heart "></i>
                         </a>
                         <a href="shopping-cart.html"
-                            class="btn btn-secondary rounded-4 list-inline-item position-relative">
+                            class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
                             <i class="fas fa-bag-shopping"></i>
 
                             <!-- Notifactions -->
@@ -194,7 +192,7 @@
                                 <span class="align-middle">EN</span>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="../ar/index.html">
+                                <a class="dropdown-item" href="../ar/companies.html">
                                     <img class="me-2" src="../../assets/img/langs-icons/ar.png" width="25"
                                         alt="arabic language bamboo">
                                     <span class="align-middle">AR</span>
@@ -221,7 +219,8 @@
                                 <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="offers.html">offers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="contact-us.html">contact
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
+                                    href="contact-us.html">contact
                                     us</a>
                             </li>
                         </ul>
@@ -230,125 +229,125 @@
             </nav>
         </header>
 
-        <!-- 
-            * Select Address after shopping cart page Content
-            ** Progress steps
-            ** title
-            ** Add Address form
-         -->
 
-        <main class="selectaddress-content-wrap container py-4">
-            <div class="rounded-4 p-3 p-md-4">
-                <!-- Steps Bar -->
-                <ul class="nav justify-content-center mb-4 steps-progress">
-                    <li class="nav-item success-checked">
-                        <span class="step ">
-                            Add products to cart
-                        </span>
-                        <i class="fas fa-check-circle"></i>
-                    </li>
-                    <li class="nav-item current-check">
-                        <span class="step ">
-                            Select address
-                        </span>
-                        <i class="fas fa-2 number-style"></i>
-                    </li>
-                    <li class="nav-item">
-                        <span class="step ">
-                            Select payment methods
-                        </span>
-                        <i class="fas fa-3 number-style"></i>
-                    </li>
-                    <li class="nav-item">
-                        <span class="step ">
-                            Complet order
-                        </span>
-                    </li>
-                </ul>
+        <!-- Title -> Form -> Chat side -->
+        <div class="py-3">
+            <div class="container">
+                <div class="contact-us-body-wrap rounded-4 overflow-hidden p-3 p-md-4">
+                    <div class="row g-3">
+                        <!-- Title -->
+                        <article class="col-12">
+                            <h3 class="mb-0">
+                                Contact Us
+                            </h3>
+                        </article>
 
 
-                <!-- Select Address -->
-                <section>
-                    <h4>Add new address</h4>
+                        <div class="col-12">
+                            <main class="row g-5">
+                                <!-- Form -->
+                                <div class="col-xl-8 col-lg-7 col-md-6">
+                                    <div class="px-md-2 pt-md-2">
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                            since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled.</p>
 
-                    <!-- Form -->
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="wrap-input position-relative">
-                                    <label for="countryLabel" class="form-label">Country</label>
-                                    <select class="form-select custom-select" id="countryLabel" name="country">
-                                        <option value="palastine">Palastine</option>
-                                        <option value="egypt">Egypt</option>
-                                    </select>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="nameLabel" class="form-label ms-1">
+                                                    Name <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="text" name="name" id="nameLabel" required
+                                                    placeholder="EX: User Name" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="emailLabel" class="form-label ms-1">
+                                                    Email <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="email" name="email" id="emailLabel" required
+                                                    placeholder="EX: username@email.com" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phoneLabel" class="form-label ms-1">
+                                                    Phone number
+                                                </label>
+                                                <input type="tel" name="phonenumber" id="phoneLabel"
+                                                    placeholder="Ex: +972 59235592" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="commentLabel" class="form-label ms-1">
+                                                    Comment <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <textarea name="comment" id="commentLabel" placeholder="Comment"
+                                                    style="resize: none;" rows="4"
+                                                    class="form-control rounded-4"></textarea>
+                                            </div>
+                                            <div>
+                                                <button type="submit"
+                                                    class="btn btn-primary px-4 rounded-4">Send</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="wrap-input position-relative">
+                                <!-- Chat and watsapp links -->
+                                <aside class="col-xl-4 col-lg-5 col-md-6">
 
-                                    <label for="governorateLabel" class="form-label">Governorate</label>
-                                    <select class="form-select custom-select " name="governorate" id="governorateLabel"
-                                        name="governorate">
-                                        <option value="gaza">Gaza</option>
-                                        <option value="qods">Qods</option>
-                                    </select>
-                                </div>
-                            </div>
+                                    <a href="join-us.html"
+                                        class="btn btn-secondary display-xomd rounded-4 w-100 py-3">Join
+                                        Us</a>
 
-                            <div class="col-md-6">
-                                <div class="wrap-input position-relative">
+                                    <!-- ! Put whatsapp number with key -->
+                                    <a href="https://wa.me/201054689756"
+                                        class="btn btn-primary my-4 btn-lg rounded-4 w-100 py-3">
+                                        <i
+                                            class="fa-brands fa-whatsapp text-white me-2 display-xomd align-text-bottom"></i>
+                                        Call us in
+                                        Whatsapp
+                                    </a>
 
-                                    <label for="areaLabel" class="form-label">Area</label>
-                                    <select class="form-select custom-select " name="area" id="areaLabel" name="area">
-                                        <option value="area1">Area 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="blockLabel" class="form-label">Block</label>
-                                <input type="text" name="block" id="blockLabel" class="form-control rounded-4"
-                                    placeholder="EX: Block1">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="streetLabel" class="form-label">Street</label>
-                                <input type="text" name="street" id="streetLabel" class="form-control rounded-4"
-                                    placeholder="EX: street1">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="avenueLabel" class="form-label">Avenue</label>
-                                <input type="text" name="avenue" id="avenueLabel" class="form-control rounded-4"
-                                    placeholder="EX: avenue1">
-                            </div>
+
+
+                                    <!-- Live Chat -->
+                                    <div class="chat-wraper rounded-4 border border-primary bg-white">
+                                        <!-- Header of chat -->
+                                        <section class="border-bottom border-primary py-3 px-4">
+                                            <h5 class="mb-0">Live Chat</h5>
+                                        </section>
+
+                                        <!-- Body Of Chat -->
+                                        <div class="chat-body">
+                                            <ul
+                                                class=" list-unstyled mb-0 py-2 px-1 d-flex justify-content-end gap-2 flex-column h-100">
+                                                <li class="message-come py-2 px-3 w-fit">
+                                                    How may we hlep you?
+                                                </li>
+                                                <li class="message-send py-2 px-3  w-fit">
+                                                    I am cool
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+
+                                        <!-- Chat Input -->
+                                        <form class=" p-1 chat-input-form">
+                                            <div class="input-group rounded-4 border border-light">
+                                                <input type="text" class="form-control border-0 bg-transparent pe-0"
+                                                    placeholder="Message">
+                                                <button class="btn rounded-4" type="submit"><i
+                                                        class="fas fa-paper-plane text-primary"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </aside>
+                            </main>
                         </div>
 
-
-
-                        <div class="my-3">
-                            <div class="wrap-input position-relative">
-
-                                <label for="addressTypeLabel" class="form-label">Address Type</label>
-                                <select class="form-select custom-select" name="addressType" id="addressTypeLabel">
-                                    <option value="addresstype1" selected>Address Type 1</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="addationalDircetionLabel" class="form-label">Additional Direction</label>
-                            <textarea name="addationalDircetion" id="addationalDircetionLabel" rows="5"
-                                style="resize: none;" class="form-control rounded-4"
-                                placeholder="EX: Near Al Amal Supermarket"></textarea>
-                        </div>
-
-                        <!-- Save Button -->
-                        <div>
-                            <button type="submit" class="btn btn-primary rounded-4 px-4">
-                                Save
-                            </button>
-                        </div>
-                    </form>
-                </section>
+                    </div>
+                </div>
             </div>
-        </main>
+
+        </div>
 
     </div>
 
@@ -394,7 +393,7 @@
                             <a class="nav-link text-black text-capitalize" href="products.html">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="contact-us.html">Contact Us</a>
+                            <a class="nav-link text-black text-capitalize active" href="contact-us.html">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black text-capitalize" href="join-us.html">Join Us</a>
@@ -445,80 +444,10 @@
     </footer>
 
 
-
-    <!-- Update or Edit The selected address -->
-    <!-- Modal -->
-    <div class="modal fade" id="editAddress" tabindex="-1" aria-labelledby="editAddressLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-4 border-0">
-                <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="editAddressLabel">Edit Address</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form>
-                    <div class="modal-body py-0">
-                        <div class="mb-3">
-                            <label for="countryLabel" class="form-label">Country</label>
-                            <input type="text" name="country" id="countryLabel" class="form-control rounded-4"
-                                value="Palestine">
-                        </div>
-                        <div class="mb-3">
-                            <label for="governorateLabel" class="form-label">Governorate</label>
-                            <input type="text" name="governorate" id="governorateLabel" class="form-control rounded-4"
-                                value="Gaza">
-                        </div>
-                        <div class="mb-3">
-                            <label for="areaLabel" class="form-label">Area</label>
-                            <input type="text" name="area" id="areaLabel" class="form-control rounded-4" value="Area1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="blockLabel" class="form-label">Block</label>
-                            <input type="text" name="block" id="blockLabel" class="form-control rounded-4"
-                                value="Block1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="streetLabel" class="form-label">Street</label>
-                            <input type="text" name="street" id="streetLabel" class="form-control rounded-4"
-                                value="street1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="avenueLabel" class="form-label">Avenue</label>
-                            <input type="text" name="avenue" id="avenueLabel" class="form-control rounded-4"
-                                value="avenue1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="housingTypeLabel" class="form-label">Housing Type</label>
-                            <input type="text" name="housingType" id="housingTypeLabel" class="form-control rounded-4"
-                                value="housingType1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="homenumberLabel" class="form-label">Home Number</label>
-                            <input type="text" name="homenumber" id="homenumberLabel" class="form-control rounded-4"
-                                value="15585">
-                        </div>
-                        <div class="mb-3">
-                            <label for="addationalDircetionLabel" class="form-label">Additional Direction</label>
-                            <input type="text" name="addationalDircetion" id="addationalDircetionLabel"
-                                class="form-control rounded-4" value="Near Al Amal Supermarket">
-                        </div>
-                    </div>
-
-
-                    <!-- Submit Button -->
-
-                    <div class="modal-footer border-top-0 justify-content-center">
-                        <button type="submit" class="btn btn-primary rounded-4 px-4">Save</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <!-- Scripts -->
     <!-- !Note: Bootstrap doesnt depend on jquery -->
     <script src="../../js/libs/bootstrap.bundle.min.js"></script>
     <script src="../../js/libs/jquery-3.5.1.min.js"></script>
-    <script src="../../js/libs/select2.min.js"></script>
     <script src="../../js/app.js"></script>
 </body>
 

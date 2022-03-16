@@ -4,6 +4,9 @@ $(function () {
   const mainHeader = $("#main-header");
   const quantityButtons = $(".quantity-buttons");
 
+  // Contact Us Page
+  const chatWrap = $(".chat-wraper");
+
   // select payment methods vars
   const paymentMethods = $(".payment-methods .list-group-item");
   const nextAfterSelectPayment = $(".toggle-next-btn");
@@ -57,6 +60,16 @@ $(function () {
   if ($(".companies-carousel").length) {
     $(".companies-carousel").owlCarousel({
       ...PUBLIC_SETTING_CAROUSEL(15),
+    });
+  }
+
+  // Contact us page
+  // Make scroll of chat at the end
+  if (chatWrap.length) {
+    let chatBody = chatWrap.find(".chat-body");
+
+    chatBody.animate({
+      scrollTop: chatBody.offset().top + chatBody.innerHeight(),
     });
   }
 
