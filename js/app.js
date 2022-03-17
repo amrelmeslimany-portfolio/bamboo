@@ -7,6 +7,9 @@ $(function () {
   // Contact Us Page
   const chatWrap = $(".chat-wraper");
 
+  // Product details page vars
+  const imageCarousel = $(".imagesproduct-carousel");
+
   // select payment methods vars
   const paymentMethods = $(".payment-methods .list-group-item");
   const nextAfterSelectPayment = $(".toggle-next-btn");
@@ -60,6 +63,24 @@ $(function () {
   if ($(".companies-carousel").length) {
     $(".companies-carousel").owlCarousel({
       ...PUBLIC_SETTING_CAROUSEL(15),
+    });
+  }
+
+  // Product Details Carousel
+  if (imageCarousel.length) {
+    // Enable the carousel
+    imageCarousel.owlCarousel({
+      ...PUBLIC_SETTING_CAROUSEL(15),
+    });
+
+    // Toggle active class when click on image
+    imageCarousel.find(".nav-link").click(function () {
+      $(this)
+        .parent()
+        .parent()
+        .siblings(".owl-item")
+        .find(".nav-link")
+        .removeClass("active");
     });
   }
 
