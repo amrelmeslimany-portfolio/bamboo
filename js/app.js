@@ -9,6 +9,7 @@ $(function () {
 
   // Product details page vars
   const imageCarousel = $(".imagesproduct-carousel");
+  const likeAndDislikesWrap = $(".likesdislikes-wrap");
 
   // select payment methods vars
   const paymentMethods = $(".payment-methods .list-group-item");
@@ -58,6 +59,15 @@ $(function () {
     });
   }
 
+  // Suggested Products at product details page
+  if ($(".suggested-products-wrap").length) {
+    $(".suggested-products-wrap").owlCarousel({
+      ...PUBLIC_SETTING_CAROUSEL(30, {
+        responsive: RESPONSIVE_CAROUSEL,
+      }),
+    });
+  }
+
   // Companies Page
   // Carousel for companies categories
   if ($(".companies-carousel").length) {
@@ -81,6 +91,24 @@ $(function () {
         .siblings(".owl-item")
         .find(".nav-link")
         .removeClass("active");
+    });
+  }
+
+  // Product reviews
+  // Like and dislike
+  if (likeAndDislikesWrap.length) {
+    const button = likeAndDislikesWrap.find(".btn");
+    // When click on LIKE & Dislike BUTTON (BTN)
+    button.click(function () {
+      $(this).toggleClass("active");
+      $(this).siblings(".btn").removeClass("active");
+
+      if ($(this).hasClass("like-anm")) {
+        $(this).removeClass("like-anm");
+        setTimeout(() => $(this).addClass("like-anm"), 10);
+      } else {
+        $(this).addClass("like-anm");
+      }
     });
   }
 
