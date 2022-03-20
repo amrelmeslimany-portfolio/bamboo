@@ -4,6 +4,9 @@ $(function () {
   const mainHeader = $("#main-header");
   const quantityButtons = $(".quantity-buttons");
 
+  // Home page
+  const categoryList = $(".categories-swiper");
+
   // Contact Us Page
   const chatWrap = $(".chat-wraper");
 
@@ -138,11 +141,22 @@ $(function () {
   $("body").css("padding-top", bodyPaddingTop() + "px");
 
   // Categories carousel at home page
-  if ($(".categories-swiper").length) {
-    $(".categories-swiper").owlCarousel({
+  if (categoryList.length) {
+    categoryList.owlCarousel({
       ...PUBLIC_SETTING_CAROUSEL(30, {
         responsive: RESPONSIVE_CAROUSEL,
       }),
+    });
+
+    // Toggle active on category selected
+    categoryList.find(".category-swiper-item").click(function (e) {
+      e.preventDefault();
+      $(this)
+        .parent()
+        .siblings(".owl-item")
+        .find(".category-swiper-item")
+        .removeClass("active");
+      $(this).addClass("active");
     });
   }
 
