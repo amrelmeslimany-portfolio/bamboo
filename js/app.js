@@ -3,6 +3,7 @@ $(function () {
   const loading = $(".page-loading");
   const mainHeader = $("#main-header");
   const quantityButtons = $(".quantity-buttons");
+  const selectedLanguage = $("body").css("direction");
 
   // Home page
   const categoryList = $(".categories-swiper");
@@ -28,6 +29,7 @@ $(function () {
   // Carousel Settings Vars
   const PUBLIC_SETTING_CAROUSEL = (margin = 30, other) => ({
     autoWidth: true,
+    rtl: selectedLanguage === "rtl" ? true : false,
     margin,
     dots: false,
     ...other,
@@ -288,6 +290,7 @@ $(function () {
         .select2({
           dropdownParent: $(this),
           width: "100%",
+          dir: selectedLanguage,
         });
     });
   }

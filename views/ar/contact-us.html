@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo - Profile</title>
-    <meta name="description" content="Bamboo is store for fruits" />
-    <meta name="keywords" content="fruits, bamboo, store, ecommerce">
+    <title>Bamboo - تواصل معنا</title>
+    <meta name="description" content="Bamboo متجر لبيع الخضروات والفواكهه" />
+    <meta name="keywords" content="fruits, bamboo, store, ecommerce, فواكهه , خضروات, متجر , ستور , منتجات">
     <meta name="theme-color" content="#3A7F0D">
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <!-- Fontawsome links -->
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="../../css/libs/regular.css">
     <link rel="stylesheet" href="../../css/libs/fontawesome.css">
     <!-- Fontawsome links -->
-    <link rel="stylesheet" href="../../css/libs/bootstrap.css">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/libs/bootstrap-rtl.css">
+    <link rel="stylesheet" href="../../css/style-rtl.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <div
         class="page-loading position-fixed top-0 start-0 w-100 h-100 align-items-center justify-content-center flex-column gap-2 bg-white">
         <img src="../../assets/img/logo.png" class="load-img" alt="bamboo logo">
-        <span class="load-text text-primary display-omd">Loading...</span>
+        <span class="load-text text-primary display-omd">جارى التحميل...</span>
     </div>
 
 
@@ -44,7 +44,6 @@
             ** Intro
          -->
         <header id="main-header">
-
             <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
                 <div class="container">
                     <!-- Navbar Buttons -->
@@ -60,15 +59,15 @@
                     <!-- Settings Links (Favourite , profile , cart , search) -->
                     <div class="features-list-buttons list-inline order-lg-1 me-sm-3">
                         <!-- Search Input At Modal before the scripts tag -->
-                        <a href="search.html" class="btn hv-bg-color rounded-4 list-inline-item btn-primary">
-                            <span class="d-none d-xl-inline">Search</span>
+                        <a href="search.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
+                            <span class="d-none d-xl-inline">بحث</span>
                             <i class="fa fa-search ms-xl-1"></i>
                         </a>
                         <a href="favourite.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <i class="fa fa-heart "></i>
                         </a>
                         <a href="shopping-cart.html"
-                            class="btn btn-primary rounded-4 list-inline-item position-relative">
+                            class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
                             <i class="fas fa-bag-shopping"></i>
 
                             <!-- Notifactions -->
@@ -78,9 +77,13 @@
                             </span>
                         </a>
 
+                        <!-- IF User logged in -->
+                        <!-- <a href="profile.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
+                            <i class="fa fa-user "></i>
+                        </a> -->
+
 
                         <!-- Form Signin / signup -->
-
                         <div class="dropdown list-inline-item">
                             <button class="dropdown-toggle w-100 h-100 hide-arrow btn btn-primary rounded-4 hv-bg-color"
                                 data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
@@ -95,13 +98,13 @@
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link rounded-4 active" id="pills-signin-tab"
                                             data-bs-toggle="pill" data-bs-target="#pills-signin" type="button"
-                                            role="tab" aria-controls="pills-signin" aria-selected="true">Sign
-                                            In</button>
+                                            role="tab" aria-controls="pills-signin" aria-selected="true">تسجيل
+                                            الدخول</button>
                                     </li>
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link rounded-4" id="pills-signup-tab" data-bs-toggle="pill"
                                             data-bs-target="#pills-signup" type="button" role="tab"
-                                            aria-controls="pills-signup" aria-selected="false">Sign Up</button>
+                                            aria-controls="pills-signup" aria-selected="false">حساب جديد</button>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="pills-tabContent">
@@ -110,28 +113,27 @@
                                         aria-labelledby="pills-signin-tab">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="signin-email" class="form-label">Email</label>
+                                                <label for="signin-email" class="form-label">البريد الالكتروني</label>
                                                 <input type="email"
                                                     class="form-control rounded-4 border-primary shadow-lg"
-                                                    id="signin-email" placeholder="please enter your Email">
+                                                    id="signin-email" placeholder="ادخل بريدك الالكتروني">
                                             </div>
                                             <div>
-                                                <label for="signin-password" class="form-label">Password</label>
+                                                <label for="signin-password" class="form-label">كلمة المرور</label>
                                                 <input type="password"
                                                     class="form-control rounded-4 border-primary shadow-lg"
-                                                    id="signin-password" placeholder="please enter your Password">
+                                                    id="signin-password" placeholder="ادخل كلمة المرور">
                                             </div>
 
                                             <div class="mb-3">
                                                 <a href="#"
-                                                    class="text-info text-decoration-underline display-sm ms-1">Forget
-                                                    your
-                                                    password?</a>
+                                                    class="text-info text-decoration-underline display-sm ms-1">هل نسيت
+                                                    كلمة المرور ؟</a>
                                             </div>
                                             <div class="text-center py-sm-5">
                                                 <button type="submit"
-                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">Sign
-                                                    In</button>
+                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">تسجيل
+                                                    الدخول</button>
                                             </div>
                                         </form>
                                     </div>
@@ -140,35 +142,34 @@
                                         aria-labelledby="pills-signup-tab">
                                         <form>
                                             <div class="mb-3">
-                                                <label for="signup-email" class="form-label">Email</label>
+                                                <label for="signup-email" class="form-label">البريد الالكتروني</label>
                                                 <input type="email"
                                                     class="form-control rounded-4 border-primary shadow-lg"
-                                                    id="signup-email" placeholder="please enter your Email">
+                                                    id="signup-email" placeholder="ادخل بريدك الالكتروني">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="signup-fullname" class="form-label">Fullname</label>
+                                                <label for="signup-fullname" class="form-label">الاسم بالكامل</label>
                                                 <input type="text"
                                                     class="form-control rounded-4 border-primary shadow-lg"
-                                                    id="signup-fullname" placeholder="please enter your Fullname">
+                                                    id="signup-fullname" placeholder="ادخل اسمك بالكامل">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="signup-phonenumber" class="form-label">Phone number</label>
+                                                <label for="signup-phonenumber" class="form-label">رقم الجوال</label>
                                                 <input type="tel"
                                                     class="form-control rounded-4 border-primary shadow-lg"
-                                                    id="signup-phonenumber"
-                                                    placeholder="please enter your Phone number">
+                                                    id="signup-phonenumber" placeholder="ادخل رقمك الجوال">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="signup-password" class="form-label">Password</label>
+                                                <label for="signup-password" class="form-label">كلمة المرور</label>
                                                 <input type="password"
                                                     class="form-control rounded-4 border-primary shadow-lg"
-                                                    id="signup-password" placeholder="please enter your Password">
+                                                    id="signup-password" placeholder="ادخل كلمة المرور">
                                             </div>
 
                                             <div class="text-center py-sm-3">
                                                 <button type="submit"
-                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">Sign
-                                                    Up</button>
+                                                    class="btn btn-primary btn-lg px-5 disabled rounded-4">انشئ
+                                                    الحساب</button>
                                             </div>
                                         </form>
                                     </div>
@@ -183,20 +184,22 @@
                         <button
                             class="btn shadow-sm rounded-4 shadow-sm hide-arrow px-2 border border-light dropdown-toggle"
                             type="button" id="languageDropdown" data-bs-toggle="dropdown">
-                            <img src="../../assets/img/langs-icons/en.png" width="25" alt="english language bamboo">
+                            <img src="../../assets/img/langs-icons/ar.png" width="25"
+                                alt="arabic العربيةاللغة language bamboo">
                         </button>
 
                         <ul class="dropdown-menu dropdown-menu-end rounded-4" aria-labelledby="languageDropdown">
                             <li class="dropdown-item active">
-                                <img class="me-2" src="../../assets/img/langs-icons/en.png" width="25"
+                                <img class="me-2" src="../../assets/img/langs-icons/ar.png" width="25"
                                     alt="english language bamboo">
-                                <span class="align-middle">EN</span>
+                                <span class="align-middle">AR</span>
                             </li>
+
                             <li>
-                                <a class="dropdown-item" href="../ar/profile-noitems.html">
-                                    <img class="me-2" src="../../assets/img/langs-icons/ar.png" width="25"
+                                <a class="dropdown-item" href="../en/contact-us.html">
+                                    <img class="me-2" src="../../assets/img/langs-icons/en.png" width="25"
                                         alt="arabic language bamboo">
-                                    <span class="align-middle">AR</span>
+                                    <span class="align-middle">EN</span>
                                 </a>
                             </li>
                         </ul>
@@ -206,22 +209,22 @@
                     <div class="collapse navbar-collapse pt-2 py-0-lg" id="mainNavbar">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-1 me-xlg-3">
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="index.html">Home</a>
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="index.html">الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="about-us.html">About
-                                    Us</a>
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="about-us.html">من نحن</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4"
-                                    href="companies.html">Companies</a>
+                                    href="companies.html">الشركات</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="offers.html">offers</a>
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="offers.html">العروض</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="contact-us.html">contact
-                                    us</a>
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
+                                    href="contact-us.html">تواصل
+                                    معنا</a>
                             </li>
                         </ul>
                     </div>
@@ -229,128 +232,124 @@
             </nav>
         </header>
 
-        <main class="profile-content-wrap container py-4">
-            <div class="row gx-2 gy-4">
 
-                <!-- 
-                    My Profile (Profile Info & Features) 
-                    ! Dont remove "profile-info-wrap" class becuase used at js
-                -->
+        <!-- Title -> Form -> Chat side -->
+        <div class="py-3">
+            <div class="container">
+                <div class="contact-us-body-wrap rounded-4 overflow-hidden p-3 p-md-4">
+                    <div class="row g-3">
+                        <!-- Title -->
+                        <article class="col-12">
+                            <h3 class="mb-0">
+                                تواصل معنا
+                            </h3>
+                        </article>
 
-                <div class="col-lg-8">
-                    <div class="profile-info-wrap">
-                        <!-- Profile Info -->
-                        <div class="p-3 p-md-4 rounded-4 bg-light mb-4">
-                            <div class="row g-3">
-                                <div class="col">
-                                    <div class="d-flex gap-3 imag-info-profile">
-                                        <!-- Image profile -->
-                                        <div class="flex-shrink-0 image-profile bg-light-primary px-4 py-4 rounded-4">
-                                            <i class="fas fa-user display-1 text-light-gray"></i>
-                                        </div>
-                                        <!-- Name & PHone & Email -->
-                                        <article class="flex-grow-1 align-self-center">
-                                            <h4>Hamdy Almuzeny</h4>
-                                            <p>
-                                                <img src="../../assets/img/langs-icons/kuwait.png" width="23"
-                                                    class="me-1" alt="kuwait">
-                                                <span class="align-middle">+972 595235592</span>
-                                            </p>
 
-                                            <p class="mb-0">
-                                                hebbahamddy3@gmail.com
-                                            </p>
-                                        </article>
+                        <div class="col-12">
+                            <main class="row g-5">
+                                <!-- Form -->
+                                <div class="col-xl-8 col-lg-7 col-md-6">
+                                    <div class="px-md-2 pt-md-2">
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                            since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled.</p>
+
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="nameLabel" class="form-label ms-1">
+                                                    Name <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="text" name="name" id="nameLabel" required
+                                                    placeholder="EX: User Name" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="emailLabel" class="form-label ms-1">
+                                                    Email <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="email" name="email" id="emailLabel" required
+                                                    placeholder="EX: username@email.com" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phoneLabel" class="form-label ms-1">
+                                                    Phone number
+                                                </label>
+                                                <input type="tel" name="phonenumber" id="phoneLabel"
+                                                    placeholder="Ex: +972 59235592" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="commentLabel" class="form-label ms-1">
+                                                    Comment <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <textarea name="comment" id="commentLabel" placeholder="Comment"
+                                                    style="resize: none;" rows="4"
+                                                    class="form-control rounded-4"></textarea>
+                                            </div>
+                                            <div>
+                                                <button type="submit"
+                                                    class="btn btn-primary px-4 rounded-4">Send</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="col-md text-md-end">
-                                    <a href="change-password.html"
-                                        class="ch-password btn btn-primary rounded-4 py-2 hv-bg-color px-3">
-                                        Change password
-                                        <i class="fas fa-lock align-text-top ms-1"></i>
+                                <!-- Chat and watsapp links -->
+                                <aside class="col-xl-4 col-lg-5 col-md-6">
+
+                                    <a href="join-us.html"
+                                        class="btn btn-secondary display-xomd rounded-4 w-100 py-3">Join
+                                        Us</a>
+
+                                    <!-- ! Put whatsapp number with key -->
+                                    <a href="https://wa.me/201054689756"
+                                        class="btn btn-primary my-4 btn-lg rounded-4 w-100 py-3">
+                                        <i class="fa-brands fa-whatsapp text-white me-2 display-xomd align-middle"></i>
+                                        Call us in
+                                        Whatsapp
                                     </a>
-                                    <a href="edit-profile.html" class="btn btn-primary rounded-4 hv-bg-color py-2">
-                                        <i class="fas fa-pencil display-omd align-middle"></i>
-                                    </a>
-                                </div>
-                            </div>
+
+
+
+                                    <!-- Live Chat -->
+                                    <div class="chat-wraper rounded-4 border border-primary bg-white">
+                                        <!-- Header of chat -->
+                                        <section class="border-bottom border-primary py-3 px-4">
+                                            <h5 class="mb-0">Live Chat</h5>
+                                        </section>
+
+                                        <!-- Body Of Chat -->
+                                        <div class="chat-body">
+                                            <ul
+                                                class=" list-unstyled mb-0 py-2 px-1 d-flex justify-content-end gap-2 flex-column h-100">
+                                                <li class="message-come py-2 px-3 w-fit">
+                                                    How may we hlep you?
+                                                </li>
+                                                <li class="message-send py-2 px-3  w-fit">
+                                                    I am cool
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+
+                                        <!-- Chat Input -->
+                                        <form class=" p-1 chat-input-form">
+                                            <div class="input-group rounded-4 border border-light">
+                                                <input type="text" class="form-control border-0 bg-transparent pe-0"
+                                                    placeholder="Message">
+                                                <button class="btn rounded-4" type="submit"><i
+                                                        class="fas fa-paper-plane text-primary"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </aside>
+                            </main>
                         </div>
 
-                        <!-- Address , Favourites , Reviews -->
-                        <div class="p-3 p-md-4 rounded-4 bg-light ">
-                            <ul class="nav nav-pills mb-4 gap-2 features-list-buttons" role="tablist">
-                                <!-- Address Button Tab -->
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link rounded-4 display-omd px-4 active" id="addresses-tab"
-                                        data-bs-toggle="pill" data-bs-target="#addresses" type="button"
-                                        role="tab">Adresses</button>
-                                </li>
-                                <!-- Favorite Button Tab -->
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link rounded-4 display-omd px-4" id="favorites-tab"
-                                        data-bs-toggle="pill" data-bs-target="#favorites" type="button"
-                                        role="tab">Favorites</button>
-                                </li>
-                                <!-- Reviews Button Tab -->
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link rounded-4 display-omd px-4" id="reviews-tab"
-                                        data-bs-toggle="pill" data-bs-target="#reviews" type="button"
-                                        role="tab">Reviews</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <!-- Address Tab -->
-                                <div class="tab-pane fade show active" id="addresses" role="tabpanel">
-                                    <!-- No Items -->
-                                    <div class="text-center my-5 py-5">
-                                        <span>No adresses yet</span>
-                                    </div>
-                                </div>
-                                <!-- Favorites Tab -->
-                                <div class="tab-pane fade" id="favorites" role="tabpanel">
-                                    <!-- Favorite Products -->
-                                    <section class="mb-4">
-                                        <h6 class="display-omd">Products</h6>
-                                        <!-- No Items -->
-                                        <div class="text-center py-5">
-                                            <span>No favorite products yet</span>
-                                        </div>
-                                    </section>
-                                    <!-- Favorite Companies -->
-                                    <section>
-                                        <h6 class="display-omd">Companies</h6>
-                                        <!-- No Items -->
-                                        <div class="text-center py-5">
-                                            <span>No favorite companies yet</span>
-                                        </div>
-                                    </section>
-
-                                </div>
-                                <!-- Reviews Tab -->
-                                <div class="tab-pane fade" id="reviews" role="tabpanel">
-                                    <!-- No Items -->
-                                    <div class="text-center my-5 py-5">
-                                        <span>No reviews yet</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-
-                <!-- My Order status -->
-                <aside class="col-lg-4">
-                    <section
-                        class="px-3 pt-3 px-md-4 pt-md-4 rounded-4  bg-light-primary position-relative myorder-wrap">
-                        <h4 class="mb-3">My Orders:</h4>
-                        <!-- No Items -->
-                        <div class="text-center my-5 py-5">
-                            <span>No favorite orders yet</span>
-                        </div>
-                    </section>
-                </aside>
             </div>
-        </main>
+
+        </div>
 
     </div>
 
@@ -364,8 +363,7 @@
                         <img src="../../assets/img/logo.png" width="130" alt="bamboo logo">
                     </a>
                     <p class="my-4 lead display-omd">
-                        We care about the smallest details and components because we strive to achieve the perfect
-                        balance for every human being "body and soul"
+                        نهتم بأدق التفاصيل والمكونات لأننا نسعى أن نحقق التوازن المثالي لكل إنسان " جسدًا وروحًا "
                     </p>
                     <ul class="list-inline">
                         <li class="list-inline-item">
@@ -384,36 +382,36 @@
                 <div class="col-lg-2 offset-xl-1 col-md-6">
                     <ul class="nav flex-column footer-links">
                         <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="index.html">Home</a>
+                            <a class="nav-link text-capitalize" href="index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="about-us.html">About Us</a>
+                            <a class="nav-link text-black text-capitalize" href="about-us.html">من نحن</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="companies.html">Companies</a>
+                            <a class="nav-link text-black text-capitalize" href="companies.html">الشركات</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="contact-us.html">Contact Us</a>
+                            <a class="nav-link active text-black text-capitalize" href="contact-us.html">تواصل معنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="join-us.html">Join Us</a>
+                            <a class="nav-link text-black text-capitalize" href="join-us.html">انضم لنا</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-md-12">
                     <section>
-                        <h5 class="mb-4">Send message for bamboo</h5>
+                        <h5 class="mb-4">ارسل رساله الى Bamboo</h5>
                         <form>
                             <div class="mb-2">
                                 <input type="text" name="email" class="form-control rounded-4 form-control-lg"
-                                    placeholder="Email">
+                                    placeholder="البريد الالكتروني">
                             </div>
                             <div class="d-flex flex-column flex-sm-row gap-3">
                                 <textarea name="message" rows="3" class="form-control rounded-4 form-control-lg"
-                                    style="resize: none;" placeholder="Message"></textarea>
+                                    style="resize: none;" placeholder="الرساله"></textarea>
                                 <button type="submit"
-                                    class="btn btn-primary display-omd flex-shrink-0 rounded-4 px-5">Send</button>
+                                    class="btn btn-primary display-omd flex-shrink-0 rounded-4 px-5">ارسل</button>
                             </div>
                         </form>
                     </section>
@@ -426,13 +424,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <p class="mb-md-0 display-sm">
-                            Copyright © 2010-2022 <strong>Bamboo Company</strong> S.L. All rights reserved.
+                            جميع الحقوق محفوظة &copy; 2010-2022 الى شركه <strong>Bamboo</strong> S.L.
                         </p>
                     </div>
                     <div class="col-md-6">
                         <div class="text-md-end">
                             <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-md-end">
-                                <a href="tel:+9712589632589" class="me-sm-2 text-white display-sm">+971
+                                <a href="tel:+9712589632589" class="me-sm-2 text-white display-sm" dir="ltr">+971
                                     258-963-2589</a>
                                 <a href="mailto:bamboo@gmail.com"
                                     class="text-decoration-underline text-white display-sm">bamboo@gmail.com</a>
@@ -443,6 +441,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <!-- Scripts -->
