@@ -313,7 +313,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-5 col-lg-3 col-md-3 text-md-end">
-                                        <button type="submit" class="btn btn-secondary rounded-4">Save</button>
+                                        <button type="submit" class="btn btn-secondary rounded-4">حفظ</button>
                                     </div>
                                 </div>
                             </div>
@@ -323,12 +323,12 @@
                                 <div class="d-flex justify-content-between gap-2 flex-wrap mb-4">
                                     <div>
                                         <span
-                                            class="badge bg-primary display-omd fw-bold rounded-4 address-title">Addresses</span>
+                                            class="badge bg-primary display-omd fw-bold rounded-4 address-title">العناويين</span>
                                     </div>
                                     <div class="flex-shrink-0">
                                         <button type="button" class="btn btn-secondary rounded-4 btn-lg"
-                                            data-bs-toggle="modal" data-bs-target="#addNewAddress">Add new
-                                            address</button>
+                                            data-bs-toggle="modal" data-bs-target="#addNewAddress">اضف عنوان
+                                            جديد</button>
                                     </div>
                                 </div>
                                 <!-- Addresses -->
@@ -338,7 +338,7 @@
                                         <div class="bg-white rounded-4 p-3 flex-grow-1">
                                             <div class="row gy-2 g-0">
                                                 <div class="col-12">
-                                                    <p class="d-inline-block"><strong>Country: Palestine </strong>
+                                                    <p class="d-inline-block"><strong>الدوله: Palestine </strong>
                                                     </p>
                                                     <div class="float-end d-flex align-items-center">
                                                         <div class="me-2">
@@ -358,21 +358,21 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md">
-                                                    <p>Governorate: Gaza</p>
-                                                    <p>Street: street</p>
-                                                    <p>Home Number: 15585</p>
+                                                    <p>المحافظة: Gaza</p>
+                                                    <p>الطريق: street</p>
+                                                    <p>رقم المنزل: 15585</p>
                                                 </div>
                                                 <div class="col-md">
-                                                    <p>Area: Area1</p>
-                                                    <p>Avenue: avenue1</p>
+                                                    <p>المنطقة: Area1</p>
+                                                    <p>الجاده: avenue1</p>
                                                 </div>
                                                 <div class="col-md">
-                                                    <p>Block: block1</p>
-                                                    <p>Housing type: House</p>
+                                                    <p>القطعة: block1</p>
+                                                    <p>نوع العنوان: منزل</p>
                                                 </div>
                                                 <div class="col-12">
                                                     <p class="mb-0">
-                                                        <strong>Additional direction:</strong> Near Al Amal
+                                                        <strong>اتجاهات اضافية:</strong> Near Al Amal
                                                         Supermarket
                                                     </p>
                                                 </div>
@@ -681,13 +681,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content rounded-4 border-0">
                 <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="addNewAddressLabel">Add New Address</h5>
+                    <h5 class="modal-title" id="addNewAddressLabel">اضافة عنوان جديد</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form>
                     <div class="modal-body py-0">
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newcountryLabel" class="form-label">Country</label>
+                            <label for="newcountryLabel" class="form-label">الدولة</label>
 
                             <select class="form-select custom-select" id="newcountryLabel" name="newcountry">
                                 <option value="palastine" selected>Palastine</option>
@@ -695,7 +695,7 @@
                             </select>
                         </div>
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newgovernorateLabel" class="form-label">Governorate</label>
+                            <label for="newgovernorateLabel" class="form-label">المحافظة</label>
 
                             <select class="form-select custom-select" name="newgovernorate" id="newgovernorateLabel">
                                 <option value="gaza" selected>Gaza</option>
@@ -703,34 +703,34 @@
                             </select>
                         </div>
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newareaLabel" class="form-label">Area</label>
+                            <label for="newareaLabel" class="form-label">المنطقة</label>
                             <select class="form-select custom-select " name="newarea" id="newareaLabel">
                                 <option value="area1" selected>Area 1</option>
                             </select>
                         </div>
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newblockLabel" class="form-label">Block</label>
-                            <input type="text" name="newblock" placeholder="EX: block1" id="newblockLabel"
+                            <label for="newblockLabel" class="form-label">القطعة</label>
+                            <input type="text" name="newblock" placeholder="مثال: block1" id="newblockLabel"
                                 class="form-control rounded-4">
                         </div>
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newstreetLabel" class="form-label">Street</label>
-                            <input type="text" name="newstreet" placeholder="EX: street" id="newstreetLabel"
+                            <label for="newstreetLabel" class="form-label">الطريق</label>
+                            <input type="text" name="newstreet" placeholder="مثال: street" id="newstreetLabel"
                                 class="form-control rounded-4">
                         </div>
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newavenueLabel" class="form-label">Avenue</label>
-                            <input type="text" name="newavenue" id="newavenueLabel" placeholder="EX: avenue"
+                            <label for="newavenueLabel" class="form-label">الجاده</label>
+                            <input type="text" name="newavenue" id="newavenueLabel" placeholder="مثال: avenue"
                                 class="form-control rounded-4">
                         </div>
 
                         <div class="mb-3 wrap-input position-relative address-type-wrap">
-                            <label for="newaddressTypeLabel" class="form-label">Address Type</label>
+                            <label for="newaddressTypeLabel" class="form-label">نوع العنوان</label>
                             <select class="form-select custom-select" name="newaddressType" id="newaddressTypeLabel">
                                 <!-- Dont change value becuse I used it in javascript -->
-                                <option value="house">House</option>
-                                <option value="apartment">Apartment</option>
-                                <option value="office">Office</option>
+                                <option value="house">منزل</option>
+                                <option value="apartment">بيت</option>
+                                <option value="office">مكتب</option>
                             </select>
                         </div>
 
@@ -738,9 +738,9 @@
                         <div class="toggled-inputs"></div>
 
                         <div class="mb-3 wrap-input position-relative">
-                            <label for="newaddationalDircetionLabel" class="form-label">Additional Direction</label>
+                            <label for="newaddationalDircetionLabel" class="form-label">اتجاهات اضافية</label>
                             <input type="text" name="newaddationalDircetion" id="newaddationalDircetionLabel"
-                                class="form-control rounded-4" placeholder="EX: Near Al Amal Supermarket">
+                                class="form-control rounded-4" placeholder="مثال: Near Al Amal Supermarket">
                         </div>
                     </div>
 
@@ -748,7 +748,7 @@
                     <!-- Submit Button -->
 
                     <div class="modal-footer border-top-0 justify-content-center">
-                        <button type="submit" class="btn btn-primary rounded-4 px-4">Save</button>
+                        <button type="submit" class="btn btn-primary rounded-4 px-4">حفظ</button>
                     </div>
                 </form>
 
@@ -843,16 +843,17 @@
         <div class="modal-dialog">
             <div class="modal-content rounded-4 border-0">
                 <div class="modal-header border-bottom-0">
-                    <h5 class="modal-title" id="confirmNumberPhoneCodeLabel">Verify phone number</h5>
+                    <h5 class="modal-title" id="confirmNumberPhoneCodeLabel">تاكيد رقم الجوال</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form autocomplete="off">
                     <div class="modal-body py-0">
-                        <p class="px-sm-4">Please enter the six-digit code that you will receive on the number
+                        <p class="px-sm-4">
+
+                            من فضلك ادخل كود مكود من 6 ارقام تم ارساله الى الرقم
                             <span>+972
-                                595235592</span> <a href="#" class="text-info text-decoration-underline"> <br> Change
-                                phone
-                                number</a></p>
+                                595235592</span> <a href="#" class="text-info text-decoration-underline"> <br> تغيير رقم
+                                الجوال</a></p>
                         <div class="p-sm-4 mt-3">
                             <div class="row justify-content-center flex-nowrap gx-2">
                                 <div class="col-auto">
@@ -884,14 +885,14 @@
 
 
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary rounded-4 px-4">Save</button>
+                            <button type="submit" class="btn btn-primary rounded-4 px-4">حفظ</button>
                         </div>
 
                     </div>
                     <!-- Submit Button -->
 
                     <div class="modal-footer border-top-0 py-4 justify-content-center">
-                        <a href="#" class="text-info text-decoration-underline">Re-send code?</a>
+                        <a href="#" class="text-info text-decoration-underline"> اعد ارسال الكود ؟</a>
                     </div>
                 </form>
 
