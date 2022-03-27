@@ -89,9 +89,15 @@ $(function () {
       type: ["house"],
       htmlTemp: `
                 <div class="mb-3 toggled-inputs">
-                    <label for="housenumber" class="form-label">House Number</label>
+                    <label for="housenumber" class="form-label">${checkLanguageInputs(
+                      "رقم المنزل",
+                      "House Number"
+                    )}</label>
                     <input type="text" name="housenumber" id="housenumber"
-                        class="form-control rounded-4" placeholder="EX: 744524">
+                        class="form-control rounded-4" placeholder="${checkLanguageInputs(
+                          "مثال:",
+                          "EX:"
+                        )} 744524">
                 </div>
               `,
     },
@@ -99,9 +105,15 @@ $(function () {
       type: ["apartment"],
       htmlTemp: `
                 <div class="mb-3 toggled-inputs">
-                    <label for="apartmentnumber" class="form-label">Apartment Number</label>
+                    <label for="apartmentnumber" class="form-label">${checkLanguageInputs(
+                      "رقم البيت",
+                      "Apartment Number"
+                    )}</label>
                     <input type="text" name="apartmentnumber" id="apartmentnumber"
-                        class="form-control rounded-4" placeholder="EX: apartmentnumber">
+                        class="form-control rounded-4" placeholder="${checkLanguageInputs(
+                          "مثال:",
+                          "EX:"
+                        )} apartmentnumber">
                 </div>
               `,
     },
@@ -109,9 +121,15 @@ $(function () {
       type: ["office"],
       htmlTemp: `
         <div class="mb-3 toggled-inputs">
-        <label for="officenumber" class="form-label">Office Number</label>
+        <label for="officenumber" class="form-label">${checkLanguageInputs(
+          "رقم المكتب",
+          "Office Number"
+        )}</label>
         <input type="text" name="officenumber" id="officenumber"
-            class="form-control rounded-4" placeholder="EX: officenumber">
+            class="form-control rounded-4" placeholder="${checkLanguageInputs(
+              "مثال:",
+              "EX:"
+            )} officenumber">
     </div>
               `,
     },
@@ -119,14 +137,20 @@ $(function () {
       type: ["office", "apartment"],
       htmlTemp: `
         <div class="mb-3 toggled-inputs">
-        <label for="building" class="form-label">Building</label>
+        <label for="building" class="form-label">${checkLanguageInputs(
+          "المبني",
+          "Building"
+        )}</label>
         <input type="text" name="building" id="building" class="form-control rounded-4"
-            placeholder="EX: building">
+            placeholder="${checkLanguageInputs("مثال:", "EX:")} building">
     </div>
     <div class="mb-3 toggled-inputs">
-        <label for="floor" class="form-label">Floor</label>
+        <label for="floor" class="form-label">${checkLanguageInputs(
+          "الطابق",
+          "Floor"
+        )}</label>
         <input type="text" name="floor" id="floor" class="form-control rounded-4"
-            placeholder="EX: floor">
+            placeholder="${checkLanguageInputs("مثال:", "EX:")} floor">
     </div>
               `,
     },
@@ -410,5 +434,9 @@ $(function () {
         toggledAddressInputs.prepend(htmlTemp);
       }
     });
+  }
+
+  function checkLanguageInputs(ar, en) {
+    return selectedLanguage === "ltr" ? en : ar;
   }
 });
