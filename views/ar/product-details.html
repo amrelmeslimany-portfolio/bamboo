@@ -66,6 +66,8 @@
                         </a>
                         <a href="favourite.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <i class="fa fa-heart "></i>
+                        </a><a href="offers.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
+                            <i class="fa fa-tags "></i>
                         </a>
                         <a href="shopping-cart.html"
                             class="btn hv-bg-color btn-primary rounded-4 list-inline-item position-relative">
@@ -242,263 +244,349 @@
                 ** Cart part
              -->
 
-            <main class="row g-4">
+            <main>
                 <!-- Product Details -->
-                <div class="col-xl-9 col-lg-8 col-md-7">
-                    <div class="bg-light rounded-4 p-3">
-                        <div class="row g-3">
-                            <!-- Product images -->
-                            <div class="col-md">
-                                <div class="p-4 rounded-4 bg-light-primary">
+                <div class="bg-light rounded-4 p-3">
+                    <div class="row g-5">
+                        <!-- Product images -->
+                        <div class="col-md-7 col-xl-5">
+                            <div class="p-4 rounded-4 bg-light-primary">
 
 
-                                    <div class="tab-content">
-                                        <div class="tab-pane mx-auto fade show active" id="blackberry1" role="tabpanel">
-                                            <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
-                                                alt="blackberry fruit">
-                                        </div>
-                                        <div class="tab-pane mx-auto fade" id="blackberry2" role="tabpanel">
-                                            <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
-                                                alt="blackberry fruit">
-                                        </div>
+                                <div class="tab-content">
+                                    <div class="tab-pane mx-auto fade show active" id="blackberry1" role="tabpanel">
+                                        <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
+                                            alt="blackberry fruit">
                                     </div>
+                                    <div class="tab-pane mx-auto fade" id="blackberry2" role="tabpanel">
+                                        <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
+                                            alt="blackberry fruit">
+                                    </div>
+                                </div>
 
 
 
-                                    <!-- image carousel -->
-                                    <!-- ! Dont change the structure because I used it at javascript -->
+                                <!-- image carousel -->
+                                <!-- ! Dont change the structure because I used it at javascript -->
 
-                                    <div class="nav nav-pills owl-carousel imagesproduct-carousel mt-4" role="tablist">
-                                        <div class="nav-item" role="presentation">
-                                            <button
-                                                class="btn bg-white rounded-4 p-3 nav-link border border-light active"
-                                                id="blackberry1-tab" data-bs-toggle="pill" data-bs-target="#blackberry1"
-                                                type="button">
-                                                <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
-                                                    alt="blackberry fruit">
-                                            </button>
-                                        </div>
-                                        <div class="nav-item" role="presentation">
-                                            <button class="btn bg-white rounded-4 p-3 nav-link border border-light"
-                                                id="blackberry2-tab" data-bs-toggle="pill" data-bs-target="#blackberry2"
-                                                type="button">
-                                                <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
-                                                    alt="blackberry fruit">
-                                            </button>
-                                        </div>
+                                <div class="nav nav-pills owl-carousel imagesproduct-carousel mt-4" role="tablist">
+                                    <div class="nav-item" role="presentation">
+                                        <button class="btn bg-white rounded-4 p-3 nav-link border border-light active"
+                                            id="blackberry1-tab" data-bs-toggle="pill" data-bs-target="#blackberry1"
+                                            type="button">
+                                            <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
+                                                alt="blackberry fruit">
+                                        </button>
+                                    </div>
+                                    <div class="nav-item" role="presentation">
+                                        <button class="btn bg-white rounded-4 p-3 nav-link border border-light"
+                                            id="blackberry2-tab" data-bs-toggle="pill" data-bs-target="#blackberry2"
+                                            type="button">
+                                            <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
+                                                alt="blackberry fruit">
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Product desc with additions features -->
-                            <div class="col-md py-2 align-self-center">
-                                <form>
-                                    <div class="d-flex">
-                                        <article class="flex-grow-1">
-                                            <h4 class="text-break mb-0">Blackberry</h4>
-                                            <strong class="display-xomd">15 KD</strong>
-                                            <a href="reviews.html" class="text-black display-omd">
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item me-0">
-                                                        <i class="fas fa-star star-color"></i>
-                                                    </li>
-                                                    <li class="list-inline-item me-0">
-                                                        <i class="fas fa-star star-color"></i>
-                                                    </li>
-                                                    <li class="list-inline-item me-0">
-                                                        <i class="fas fa-star star-color"></i>
-                                                    </li>
-                                                    <li class="list-inline-item me-0">
-                                                        <i class="fas fa-star star-color"></i>
-                                                    </li>
-                                                    <li class="list-inline-item me-0">
-                                                        <i class="fas fa-star star-color"></i>
-                                                    </li>
-                                                    <li class="list-inline-item display-sm text-decoration-underline">
-                                                        (152)
-                                                    </li>
-                                                </ul>
-                                            </a>
-                                        </article>
-                                        <div class="flex-shrink-0 flex-column d-flex gap-1 ms-1">
-                                            <button class="btn btn-secondary rounded-4 px-2">
-                                                <i class="fas fa-heart display-omd align-middle"></i>
-                                            </button>
+                        </div>
+                        <!-- Product desc with additions features -->
+                        <div class="col-md py-2 align-self-center">
+                            <form>
+                                <div class="d-flex">
+                                    <article class="flex-grow-1">
+                                        <h4 class="text-break mb-0">Blackberry</h4>
+                                        <strong class="display-xomd">15 KD</strong>
+                                        <a href="reviews.html" class="text-black display-omd">
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item me-0">
+                                                    <i class="fas fa-star star-color"></i>
+                                                </li>
+                                                <li class="list-inline-item me-0">
+                                                    <i class="fas fa-star star-color"></i>
+                                                </li>
+                                                <li class="list-inline-item me-0">
+                                                    <i class="fas fa-star star-color"></i>
+                                                </li>
+                                                <li class="list-inline-item me-0">
+                                                    <i class="fas fa-star star-color"></i>
+                                                </li>
+                                                <li class="list-inline-item me-0">
+                                                    <i class="fas fa-star star-color"></i>
+                                                </li>
+                                                <li class="list-inline-item display-sm text-decoration-underline">
+                                                    (152)
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </article>
+                                    <div class="flex-shrink-0 flex-column d-flex gap-1 ms-1">
+                                        <button class="btn btn-secondary rounded-4 px-2">
+                                            <i class="fas fa-heart display-omd align-middle"></i>
+                                        </button>
 
-                                            <button class="btn btn-share text-white rounded-4 px-2">
-                                                <i class="fas fa-share-nodes display-omd align-middle"></i>
+                                        <button class="btn btn-share text-white rounded-4 px-2">
+                                            <i class="fas fa-share-nodes display-omd align-middle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <hr class="bg-light-gray my-4">
+
+                                <section class="row g-2 align-items-center w-xl-fit">
+                                    <h6 class="col mb-0">الكمية</h6>
+                                    <div class="col">
+                                        <div class="quantity-buttons input-group flex-nowrap">
+                                            <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                                <i class="fas fa-circle-minus"></i>
+                                            </button>
+                                            <input type="number"
+                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                                style="width: 30px;" value="1" placeholder="1" min="1">
+                                            <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                                <i class="fas fa-circle-plus"></i>
                                             </button>
                                         </div>
                                     </div>
-                                    <hr class="bg-light-gray my-4">
 
-                                    <!-- Sizes -->
-                                    <!-- ! You must change (id) if (input) and (for) -->
-                                    <section class="product-sizes">
-                                        <h6>المقاسات</h6>
-                                        <ul class="d-flex gap-4 flex-wrap list-unstyled">
-                                            <li>
-                                                <input type="checkbox" name="size" class="btn-check" id="btn-check1">
-                                                <label class="btn rounded-4 p-0" for="btn-check1">
-                                                    <span class="py-1 px-2 d-block border-bottom">250 g</span>
-                                                    <span class="py-1 px-2 d-block">5 KD</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" name="size" class="btn-check" id="btn-check2">
-                                                <label class="btn rounded-4 p-0" for="btn-check2">
-                                                    <span class="py-1 px-2 d-block border-bottom">250 g</span>
-                                                    <span class="py-1 px-2 d-block">5 KD</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" name="size" class="btn-check" id="btn-check3">
-                                                <label class="btn rounded-4 p-0" for="btn-check3">
-                                                    <span class="py-1 px-2 d-block border-bottom">250 g</span>
-                                                    <span class="py-1 px-2 d-block">5 KD</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <input type="checkbox" name="size" class="btn-check" id="btn-check4">
-                                                <label class="btn rounded-4 p-0" for="btn-check4">
-                                                    <span class="py-1 px-2 d-block border-bottom">250 g</span>
-                                                    <span class="py-1 px-2 d-block">5 KD</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </section>
-
-
-                                    <hr class="bg-light-gray my-4">
-
-                                    <section class="row g-2 align-items-center">
-                                        <h6 class="col mb-0">الكمية</h6>
-                                        <div class="col">
-                                            <div class="quantity-buttons input-group flex-nowrap">
-                                                <button type="button" class="btn btn-light-primary rounded-4 minus">
-                                                    <i class="fas fa-circle-minus"></i>
-                                                </button>
-                                                <input type="number"
-                                                    class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                    style="width: 30px;" value="1" placeholder="1" min="1">
-                                                <button type="button" class="btn btn-light-primary rounded-4 plus">
-                                                    <i class="fas fa-circle-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mt-4">
-                                            <button class="btn btn-primary rounded-4 w-100" type="submit">
-                                                <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                اضافة للسلة
-                                            </button>
-                                        </div>
-                                    </section>
-                                </form>
-                            </div>
+                                    <div class="col-12 mt-4">
+                                        <button class="btn btn-primary rounded-4 w-100" type="submit">
+                                            <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                            اضافة للسلة
+                                        </button>
+                                    </div>
+                                </section>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <!-- Cart -->
-                <aside class="col-xl-3 col-lg-4 col-md-5">
-                    <div class="bg-light rounded-4 p-3">
-                        <h4 class="mb-3">My cart</h4>
-                        <!-- Cart Table -->
-                        <ul class="list-unstyled cart-table">
-                            <li class="p-2 rounded-4 bg-white d-flex">
-                                <!-- Product img -->
-                                <div class="flex-shrink-0 me-2 rounded-4 bg-yellow p-2">
-                                    <img src="../../assets/img/home/noBG-box.png" width="80" class="img-fluid"
-                                        alt="box fruits">
-                                </div>
-                                <!-- Product Desc -->
-                                <div class="flex-grow-1">
-                                    <a class="text-black d-inline-block" href="products.html">
-                                        <p class="mb-0 text-break">Greens</p>
-                                        <span class="fw-bold">15 KD</span>
-                                    </a>
-                                    <button class="btn btn-secondary btn-sm rounded-4 float-end">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-
-                                    <div class="quantity-buttons input-group flex-nowrap mt-1">
-                                        <button class="btn rounded-4 minus">
-                                            <i class="fas fa-circle-minus"></i>
-                                        </button>
-                                        <input type="number"
-                                            class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                            style="width: 30px;" value="1" placeholder="1" min="1">
-                                        <button class="btn rounded-4 plus">
-                                            <i class="fas fa-circle-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="p-2 rounded-4 bg-white d-flex">
-                                <!-- Product img -->
-                                <div class="flex-shrink-0 me-2 rounded-4 bg-yellow p-2">
-                                    <img src="../../assets/img/home/noBG-box.png" width="80" class="img-fluid"
-                                        alt="box fruits">
-                                </div>
-                                <!-- Product Desc -->
-                                <div class="flex-grow-1">
-                                    <a class="text-black d-inline-block" href="products.html">
-                                        <p class="mb-0 text-break">Greens</p>
-                                        <span class="fw-bold">15 KD</span>
-                                    </a>
-                                    <button class="btn btn-secondary btn-sm rounded-4 float-end">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-
-                                    <div class="quantity-buttons input-group flex-nowrap mt-1">
-                                        <button class="btn rounded-4 minus">
-                                            <i class="fas fa-circle-minus"></i>
-                                        </button>
-                                        <input type="number"
-                                            class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                            style="width: 30px;" value="1" placeholder="1" min="1">
-                                        <button class="btn rounded-4 plus">
-                                            <i class="fas fa-circle-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </li>
-
-                        </ul>
-                        <hr class="bg-light-gray">
-                        <!-- Payment Summary -->
-                        <section class="mt-1">
-                            <h5>ملخص الدفع:</h5>
-                            <div class="row gx-0 gy-2">
-                                <!-- Summary Sub Total -->
-                                <p class="col-9">
-                                    Subtotal
-                                </p>
-                                <p class="col-3 text-end">
-                                    30 KD
-                                </p>
-                                <!-- Summary Delivery cost -->
-                                <p class="col-9">
-                                    تكلفة التوصيل
-                                </p>
-                                <p class="col-3 text-end">
-                                    2 KD
-                                </p>
-
-                                <!-- Total -->
-                                <div class="d-flex justify-content-between gap-1 mt-2">
-                                    <strong>
-                                        المبلغ الاجمالى
-                                    </strong>
-                                    <strong>
-                                        32 KD
-                                    </strong>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </aside>
             </main>
 
+            <!-- Selected Products -->
+            <section class="bundles-section my-4">
+                <h4 class="my-3">طلبات: </h4>
+                <div class="bg-light p-4 rounded-4">
+                    <div class="row g-4 p-2">
+                        <div class="col align-self-center">
+                            <h6 class="mb-0 text-truncate">اسم المنتج</h6>
+                            <p class="mb-0 mt-1 text-muted">KD 56</p>
+                        </div>
+                        <form class="col d-flex align-items-center gap-4 flex-wrap justify-content-end">
+
+                            <select class="form-select rounded-4 bg-light-primary w-fit">
+                                <option value="1"> 1 اسم المنتج</option>
+                                <option value="2"> 2 اسم المنتج</option>
+                                <option value="3"> 3 اسم المنتج</option>
+                            </select>
+                            <div class="quantity-buttons input-group flex-nowrap w-fit">
+                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                    <i class="fas fa-circle-minus"></i>
+                                </button>
+                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
+                                    value="1" placeholder="1" min="1" style="width: 80px;">
+                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                    <i class="fas fa-circle-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary rounded-4" type="submit">اضافة</button>
+                        </form>
+                    </div>
+                    <div class="row g-4 p-2">
+                        <div class="col align-self-center">
+                            <h6 class="mb-0 text-truncate">اسم المنتج</h6>
+                            <p class="mb-0 mt-1 text-muted">KD 56</p>
+                        </div>
+                        <form class="col d-flex align-items-center gap-4 flex-wrap justify-content-end">
+
+                            <select class="form-select rounded-4 bg-light-primary w-fit">
+                                <option value="1"> 1 اسم المنتج</option>
+                                <option value="2"> 2 اسم المنتج</option>
+                                <option value="3"> 3 اسم المنتج</option>
+                            </select>
+                            <div class="quantity-buttons input-group flex-nowrap w-fit">
+                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                    <i class="fas fa-circle-minus"></i>
+                                </button>
+                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
+                                    value="1" placeholder="1" min="1" style="width: 80px;">
+                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                    <i class="fas fa-circle-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary rounded-4" type="submit">اضافة</button>
+                        </form>
+                    </div>
+                    <div class="row g-4 p-2">
+                        <div class="col align-self-center">
+                            <h6 class="mb-0 text-truncate">اسم المنتج</h6>
+                            <p class="mb-0 mt-1 text-muted">KD 56</p>
+                        </div>
+                        <form class="col d-flex align-items-center gap-4 flex-wrap justify-content-end">
+
+                            <select class="form-select rounded-4 bg-light-primary w-fit">
+                                <option value="1"> 1 اسم المنتج</option>
+                                <option value="2"> 2 اسم المنتج</option>
+                                <option value="3"> 3 اسم المنتج</option>
+                            </select>
+                            <div class="quantity-buttons input-group flex-nowrap w-fit">
+                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                    <i class="fas fa-circle-minus"></i>
+                                </button>
+                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
+                                    value="1" placeholder="1" min="1" style="width: 80px;">
+                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                    <i class="fas fa-circle-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary rounded-4" type="submit">اضافة</button>
+                        </form>
+                    </div>
+                    <div class="row g-4 p-2">
+                        <div class="col align-self-center">
+                            <h6 class="mb-0 text-truncate">اسم المنتج</h6>
+                            <p class="mb-0 mt-1 text-muted">KD 56</p>
+                        </div>
+                        <form class="col d-flex align-items-center gap-4 flex-wrap justify-content-end">
+
+                            <select class="form-select rounded-4 bg-light-primary w-fit">
+                                <option value="1"> 1 اسم المنتج</option>
+                                <option value="2"> 2 اسم المنتج</option>
+                                <option value="3"> 3 اسم المنتج</option>
+                            </select>
+                            <div class="quantity-buttons input-group flex-nowrap w-fit">
+                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                    <i class="fas fa-circle-minus"></i>
+                                </button>
+                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
+                                    value="1" placeholder="1" min="1" style="width: 80px;">
+                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                    <i class="fas fa-circle-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary rounded-4" type="submit">اضافة</button>
+                        </form>
+                    </div>
+                    <div class="row g-4 p-2">
+                        <div class="col align-self-center">
+                            <h6 class="mb-0 text-truncate">اسم المنتج</h6>
+                            <p class="mb-0 mt-1 text-muted">KD 56</p>
+                        </div>
+                        <form class="col d-flex align-items-center gap-4 flex-wrap justify-content-end">
+
+                            <select class="form-select rounded-4 bg-light-primary w-fit">
+                                <option value="1"> 1 اسم المنتج</option>
+                                <option value="2"> 2 اسم المنتج</option>
+                                <option value="3"> 3 اسم المنتج</option>
+                            </select>
+                            <div class="quantity-buttons input-group flex-nowrap w-fit">
+                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                    <i class="fas fa-circle-minus"></i>
+                                </button>
+                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
+                                    value="1" placeholder="1" min="1" style="width: 80px;">
+                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                    <i class="fas fa-circle-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary rounded-4" type="submit">اضافة</button>
+                        </form>
+                    </div>
+                    <div class="row g-4 p-2">
+                        <div class="col align-self-center">
+                            <h6 class="mb-0 text-truncate">اسم المنتج</h6>
+                            <p class="mb-0 mt-1 text-muted">KD 56</p>
+                        </div>
+                        <form class="col d-flex align-items-center gap-4 flex-wrap justify-content-end">
+
+                            <select class="form-select rounded-4 bg-light-primary w-fit">
+                                <option value="1"> 1 اسم المنتج</option>
+                                <option value="2"> 2 اسم المنتج</option>
+                                <option value="3"> 3 اسم المنتج</option>
+                            </select>
+                            <div class="quantity-buttons input-group flex-nowrap w-fit">
+                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                    <i class="fas fa-circle-minus"></i>
+                                </button>
+                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
+                                    value="1" placeholder="1" min="1" style="width: 80px;">
+                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                    <i class="fas fa-circle-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-secondary rounded-4" type="submit">اضافة</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Selected Products -->
+            <section class="buywith-section my-4">
+                <h4 class="my-3">اشترى معه: </h4>
+                <div class="row g-4 bg-light p-4 rounded-4 mt-2">
+                    <div class="col-md-6">
+                        <img src="../../assets/img/home/noBG-blueberry.png" class="img" width="120" alt="blueberry">
+                        <span class="display-lg mx-2">+</span>
+                        <img src="../../assets/img/home/noBG-orange.png" class="img" width="120" alt="mango">
+                        <span class="display-lg mx-2">+</span>
+                        <img src="../../assets/img/home/noBG-honey.png" class="img" width="120" alt="blueberry">
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex align-items-center p-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" name="buywith[]" type="checkbox" value="pr1"
+                                        id="pr1">
+                                    <label class="form-check-label" for="pr1">
+                                        <span>المنتج الحالى:</span>
+                                        <a href="product-details.html" class="mx-2">
+                                            اسم المنتج
+                                        </a>
+                                        <span class="fw-bold">
+                                            (20KD)
+                                        </span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center p-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" name="buywith[]" type="checkbox" value="pr2"
+                                        id="pr2">
+                                    <label class="form-check-label" for="pr2">
+                                        <span>المنتج الحالى:</span>
+                                        <a href="product-details.html" class="mx-2">
+                                            اسم المنتج
+                                        </a>
+                                        <span class="fw-bold">
+                                            (20KD)
+                                        </span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center p-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" name="buywith[]" type="checkbox" value="pr3"
+                                        id="pr3">
+                                    <label class="form-check-label" for="pr3">
+                                        <span>المنتج الحالى:</span>
+                                        <a href="product-details.html" class="mx-2">
+                                            اسم المنتج
+                                        </a>
+                                        <span class="fw-bold">
+                                            (20KD)
+                                        </span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <article class="mt-2">
+                            <h6>المجمل: 122KD</h6>
+                            <a href="#" class="btn btn-secondary rounded-4">
+                                اضف للسله
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
             <!-- Description -->
             <div>
                 <h4 class="my-3">الوصف</h4>
@@ -873,6 +961,28 @@
         </div>
     </footer>
 
+
+    <!-- Bottom Nav Add To Card -->
+    <div class="bg-light p-2 row gx-4 fixed-bottom d-sm-none" style="z-index: 1029;bottom: 48px;">
+        <div class="col">
+            <div class="quantity-buttons input-group flex-nowrap">
+                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                    <i class="fas fa-circle-minus"></i>
+                </button>
+                <input type="number" class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                    value="1" placeholder="1" min="1">
+                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                    <i class="fas fa-circle-plus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="col">
+            <button class="btn btn-primary rounded-4 w-100" type="submit">
+                <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                اضافة للسلة
+            </button>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <!-- !Note: Bootstrap doesnt depend on jquery -->

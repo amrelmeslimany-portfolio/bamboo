@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bamboo - العروض</title>
+    <title>Bamboo - انضم لنا</title>
     <meta name="description" content="Bamboo متجر لبيع الخضروات والفواكهه" />
     <meta name="keywords" content="fruits, bamboo, store, ecommerce, فواكهه , خضروات, متجر , ستور , منتجات">
     <meta name="theme-color" content="#3A7F0D">
@@ -198,7 +198,7 @@
                             </li>
 
                             <li>
-                                <a class="dropdown-item" href="../en/offers.html">
+                                <a class="dropdown-item" href="../en/join-us.html">
                                     <img class="me-2" src="../../assets/img/langs-icons/en.png" width="25"
                                         alt="arabic language bamboo">
                                     <span class="align-middle">EN</span>
@@ -221,11 +221,11 @@
                                     href="companies.html">الشركات</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
-                                    href="offers.html">العروض</a>
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="offers.html">العروض</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4" href="contact-us.html">تواصل
+                                <a class="nav-link text-uppercase px-2 px-lg-3 px-xxl-4 active"
+                                    href="contact-us.html">تواصل
                                     معنا</a>
                             </li>
                         </ul>
@@ -235,229 +235,167 @@
         </header>
 
 
-        <!-- Title -> Offers Cards -->
-        <div class="py-2">
+        <!-- Title -> Form -> Chat side -->
+        <div class="py-3">
             <div class="container">
-                <div class="offers-body-wrap rounded-4 overflow-hidden p-3 p-md-4">
+                <div class="contact-us-body-wrap rounded-4 overflow-hidden p-3 p-md-4">
                     <div class="row g-3">
                         <!-- Title -->
                         <article class="col-12">
                             <h3 class="mb-0">
-                                العروض
+                                انضم لنا
                             </h3>
                         </article>
 
-                        <!-- Offers -->
+
                         <div class="col-12">
-                            <div class="row g-3">
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
+                            <main class="row g-5">
+                                <!-- Form -->
+                                <div class="col-xl-8 col-lg-7 col-md-6">
+                                    <div class="px-md-2 pt-md-2">
+                                        <p>
+                                            يسعدنا دائما أن نسمع آرائكم وملاحظاتكم كما أننا متواجدون دائما بالقرب منكم
+                                            لمساعدتكم
+                                            فريقنا يعمل بشغف ليقدم لكم تجربة صحية وممتعة
+                                        </p>
 
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="nameLabel" class="form-label ms-1">
+                                                    اسم الشركة <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="text" name="name" id="nameLabel" required
+                                                    placeholder="مثال: اسم الشركه" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="emailLabel" class="form-label ms-1">
+                                                    البريد الالكتروني للشركه <sup
+                                                        class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="email" name="email" id="emailLabel" required
+                                                    placeholder="مثال: username@email.com"
+                                                    class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="phoneLabel" class="form-label ms-1">
+                                                    رقم الجوال
+                                                </label>
+                                                <input type="tel" name="phonenumber" id="phoneLabel"
+                                                    placeholder="مثال: +972 59235592" class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="field" class="form-label ms-1">
+                                                    المجال <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <input type="text" name="field" id="field" placeholder="مثال: المجال"
+                                                    class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="facebook" class="form-label ms-1">
+                                                    بروفايل الفيس بوك
+                                                </label>
+                                                <input type="url" name="facebook" id="facebook"
+                                                    placeholder="مثال: https://www.facebook.com/56484"
+                                                    class="form-control rounded-4">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="field" class="form-label ms-1">
+                                                    هل تقدمون منتجات عضويه ؟ <sup
+                                                        class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="productQ1"
+                                                        value="1" id="productQ1">
+                                                    <label class="form-check-label" for="productQ1">
+                                                        نعم
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="productQ1"
+                                                        value="0" id="productQ2">
+                                                    <label class="form-check-label" for="productQ2">
+                                                        لا
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="field" class="form-label ms-1">
+                                                    هل تقدمون منتجات معدلة وراثياً ؟ <sup
+                                                        class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="productQ2"
+                                                        value="1" id="productQ21">
+                                                    <label class="form-check-label" for="productQ2">
+                                                        نعم
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="productQ2"
+                                                        value="0" id="productQ22">
+                                                    <label class="form-check-label" for="productQ2">
+                                                        لا
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="commentLabel" class="form-label ms-1">
+                                                    تعليق <sup class="text-danger display-omd align-bottom">*</sup>
+                                                </label>
+                                                <textarea name="comment" id="commentLabel" placeholder="اكتب التعليق"
+                                                    style="resize: none;" rows="4"
+                                                    class="form-control rounded-4"></textarea>
+                                            </div>
+                                            <div>
+                                                <button type="submit"
+                                                    class="btn btn-primary px-4 rounded-4">ارسل</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
+                                <!-- Chat and watsapp links -->
+                                <aside class="col-xl-4 col-lg-5 col-md-6">
+                                    <!-- ! Put whatsapp number with key -->
+                                    <a href="https://wa.me/2010000000"
+                                        class="btn btn-primary my-4 btn-lg rounded-4 w-100 py-3">
+                                        <i class="fa-brands fa-whatsapp text-white me-2 display-xomd align-middle"></i>
+                                        تواصل معنا على الواتس اب
+                                    </a>
 
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
+                                    <!-- Live Chat -->
+                                    <div class="chat-wraper rounded-4 border border-primary bg-white">
+                                        <!-- Header of chat -->
+                                        <section class="border-bottom border-primary py-3 px-4">
+                                            <h5 class="mb-0">شات مباشر</h5>
+                                        </section>
 
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
+                                        <!-- Body Of Chat -->
+                                        <div class="chat-body">
+                                            <ul
+                                                class=" list-unstyled mb-0 py-2 px-1 d-flex justify-content-end gap-2 flex-column h-100">
+                                                <li class="message-come py-2 px-3 w-fit">
+                                                    كيف حالك ؟
+                                                </li>
+                                                <li class="message-send py-2 px-3  w-fit">
+                                                    بخير
+                                                </li>
 
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
+                                            </ul>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
 
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
 
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
+                                        <!-- Chat Input -->
+                                        <form class=" p-1 chat-input-form">
+                                            <div class="input-group rounded-4 border border-light">
+                                                <input type="text" class="form-control border-0 bg-transparent pe-0"
+                                                    placeholder="الرساله">
+                                                <button class="btn rounded-4" type="submit"><i
+                                                        class="fas fa-paper-plane text-primary"></i></button>
+                                            </div>
+                                        </form>
                                     </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
-
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
-
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xxl-4 col-lg-6">
-                                    <div class="offer-card card px-0 border-0 rounded-4">
-                                        <div class="card-body">
-                                            <a href="#" class="d-flex justify-content-between flex-wrap mb-3">
-                                                <div class="flex-shrink-0 d-flex align-items-center">
-                                                    <div class="p-1 rounded-3 bg-light-primary me-2">
-                                                        <img src="../../assets/img/home/leaf.png" class="align-middle"
-                                                            width="20" alt="leaf">
-                                                    </div>
-                                                    <h5 class="mb-0 text-black">Greens</h5>
-                                                </div>
-                                                <div>
-                                                    <p class="display-omd mb-0">Free 1+1</p>
-                                                </div>
-                                            </a>
-
-                                            <a href="#"
-                                                class="advertise-fruits d-flex justify-content-center align-items-center w-100">
-                                                <img src="../../assets/img/pineapple.png" alt="Pineapple">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                </aside>
+                            </main>
                         </div>
 
                     </div>
@@ -507,7 +445,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-black text-capitalize" href="contact-us.html">تواصل معنا</a>
+                            <a class="nav-link active text-black text-capitalize" href="contact-us.html">تواصل معنا</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-black text-capitalize" href="join-us.html">انضم لنا</a>
@@ -556,6 +494,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <!-- Scripts -->
