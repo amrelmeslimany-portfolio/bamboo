@@ -65,8 +65,10 @@
                         </a>
                         <a href="favourite.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <i class="fa fa-heart "></i>
-                        </a><a href="offers.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
-                            <i class="fa fa-tags "></i>
+                        </a><a href="offers.html"
+                            class="btn btn-primary d-sm-none hv-bg-color rounded-4 list-inline-item">
+                            <img src="../../assets/img/discount.png" style="margin-top: -2px;" alt="discount"
+                                width="26">
                         </a>
                         <a href="shopping-cart.html"
                             class="btn  btn-secondary rounded-4 list-inline-item position-relative">
@@ -156,7 +158,8 @@
                                                     id="signup-fullname" placeholder="ادخل اسمك بالكامل">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="signup-phonenumber" class="form-label">رقم الجوال</label>
+                                                <label for="signup-phonenumber"
+                                                    class="form-label">الموبايلالجوال</label>
                                                 <input type="tel"
                                                     class="form-control rounded-4 border-primary shadow-lg"
                                                     id="signup-phonenumber" placeholder="ادخل رقمك الجوال">
@@ -296,12 +299,10 @@
 
                 <div class="tab-content bg-white p-4 rounded-3">
                     <div class="d-flex mb-4 justify-content-center gap-2">
-
                         <button class="btn googlebtn text-white rounded-3 py-2 px-4">
                             <i class="fab fa-google me-1"></i>
                             جوجل
                         </button>
-
 
                         <button class="btn bg-black text-white rounded-3 py-2 px-4">
                             <i class="fab fa-apple display-omd me-1"></i>
@@ -352,9 +353,19 @@
                                     id="signup-fullname2" placeholder="ادخل اسمك بالكامل">
                             </div>
                             <div class="mb-3">
-                                <label for="signup-phonenumber3" class="form-label">رقم الجوال</label>
-                                <input type="tel" class="form-control rounded-4 border-primary shadow-lg"
-                                    id="signup-phonenumber3" placeholder="ادخل رقمك الجوال">
+                                <label for="signup-phonenumber3" class="form-label">رقم الموبايل</label>
+                                <div
+                                    class=" bg-white rounded-4 ps-2 border-primary border d-flex align-items-center gap-2">
+                                    <div class="flex-shrink-0">
+                                        <img src="../../assets/img/langs-icons/kuwait.png" width="23" class="me-1"
+                                            alt="kewuit">
+                                        <span class="align-middle">+965</span>
+                                    </div>
+                                    <input type="tel"
+                                        class="form-control bg-transparent rounded-4 border-0 shadow-lg ps-0"
+                                        id="signup-phonenumber3" placeholder="ادخل رقمك الموبايل">
+
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="signup-password4" class="form-label">كلمة المرور</label>

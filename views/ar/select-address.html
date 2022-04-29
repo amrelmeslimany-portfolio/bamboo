@@ -65,8 +65,10 @@
                         </a>
                         <a href="favourite.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
                             <i class="fa fa-heart "></i>
-                        </a><a href="offers.html" class="btn btn-primary hv-bg-color rounded-4 list-inline-item">
-                            <i class="fa fa-tags "></i>
+                        </a><a href="offers.html"
+                            class="btn btn-primary d-sm-none hv-bg-color rounded-4 list-inline-item">
+                            <img src="../../assets/img/discount.png" style="margin-top: -2px;" alt="discount"
+                                width="26">
                         </a>
                         <a href="shopping-cart.html"
                             class="btn  btn-secondary rounded-4 list-inline-item position-relative">
@@ -278,19 +280,11 @@
                     <div>
                         <h4 class="mb-0">اختيار العنوان</h4>
                     </div>
-                    <div class="d-flex gap-4 align-items-center">
 
-                        <div>
-
-                            <select name="time" class="form-select mt-2 rounded-4 bg-light-primary border-0">
-                                <option value="now">التوصيل الأن</option>
-                                <option value="now">التوصيل لاحقاً</option>
-                            </select>
-                        </div>
-                        <div>
-                            <a href="add-new-address.html" class="btn btn-secondary rounded-4">اضف عنوان جديد</a>
-                        </div>
+                    <div>
+                        <a href="add-new-address.html" class="btn btn-secondary rounded-4">اضف عنوان جديد</a>
                     </div>
+
                 </section>
 
                 <!-- Addresses -->
@@ -335,7 +329,10 @@
                                     </p>
                                 </div>
                             </div>
+
                         </div>
+
+
 
                     </li>
                     <!-- Address Two -->
@@ -426,6 +423,21 @@
                     </li>
                 </ul>
 
+                <div class="my-3 ms-4">
+                    <strong class="mb-1 d-block">وقت التوصيل:</strong>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="delTime" value="now" checked id="delTime1">
+                        <label class="form-check-label" for="delTime1">
+                            الأن
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="delTime" value="later" id="delTime2">
+                        <label class="form-check-label" for="delTime2">
+                            لاحقاً
+                        </label>
+                    </div>
+                </div>
 
                 <!-- Next Button -->
                 <div class="mt-1 ms-4 ps-1">

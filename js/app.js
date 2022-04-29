@@ -302,6 +302,27 @@ $(function () {
     });
   }
 
+  if ($(".discount-code").length) {
+    let input = $(".discount-code .discount-input");
+    let button = $(".discount-code .discount-btn");
+
+    button.click(function () {
+      if (input.hasClass("is-invalid")) {
+        input.removeClass("is-invalid");
+        console.log("true");
+      }
+      input.toggleClass("is-valid");
+    });
+
+    input.blur(function () {
+      if ($(this).hasClass("is-valid")) {
+        $(this).removeClass("is-valid");
+      }
+
+      $(this).toggleClass("is-invalid");
+    });
+  }
+
   // Address
   /*
    * Change the select input by using selct2 plugin
