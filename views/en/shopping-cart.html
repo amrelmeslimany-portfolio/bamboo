@@ -68,7 +68,8 @@
                             <i class="fa fa-heart "></i>
                         </a><a href="offers.html"
                             class="btn btn-primary d-sm-none hv-bg-color rounded-4 list-inline-item">
-                            <img src="../../assets/img/discount.png" style="margin-top: -2px;" alt="discount" width="26">
+                            <img src="../../assets/img/discount.png" style="margin-top: -2px;" alt="discount"
+                                width="26">
                         </a>
                         <a href="shopping-cart.html"
                             class="btn btn-secondary rounded-4 list-inline-item position-relative">
@@ -239,188 +240,146 @@
                     <div class="p-3 p-md-4 rounded-4 shopping-table">
                         <h3>My Cart</h3>
                         <!-- MY Cart Table Self -->
-                        <div class="table-responsive">
-                            <table class="table table-nowrap table-borderless align-middle">
+                        <ul class="list-unstyled mb-0 mt-4 d-flex flex-column gap-2">
+                            <li class="row gx-4 bg-white p-2 align-items-center rounded-4">
+                                <div class="d-flex align-items-center gap-2 col-md-6 col-11 sc-1">
+                                    <div class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
+                                        <img src="../../assets/img/home/noBG-blueberry.png" width="87"
+                                            alt="blueberry bamboo">
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h4 class="text-truncate">Vegetables box</h4>
 
-                                <tr>
-                                    <!-- Product Info (img , title , category) -->
-                                    <td class="bg-white rounded-start">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div
-                                                class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
-                                                <img src="../../assets/img/home/noBG-blueberry.png" width="87"
-                                                    alt="blueberry bamboo">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h4>Vegetables box</h4>
-                                                <a href="product-details.html"
-                                                    class="text-decoration-underline text-black fw-light">Greens</a>
-                                            </div>
-                                        </div>
-                                    </td>
+                                        <a href="product-details.html"
+                                            class="text-decoration-underline text-black fw-light d-block">Greens</a>
+                                    </div>
 
+                                </div>
 
-                                    <!-- Sizes -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Sizes</h5>
+                                <div class="col-md-2 col-3">
+                                    <h5 class="fw-light">Price</h5>
+                                    <span class="text-primary display-omd fw-bold" dir="ltr">15
+                                        KD</span>
+                                </div>
 
-                                        <select name="sizes"
-                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
-                                            <option value="750g">750 g</option>
-                                            <option value="852g">852 g</option>
-                                        </select>
-                                    </td>
-
-                                    <!-- Quantity -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Quantity</h5>
-
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button class="btn rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
-                                            </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button class="btn rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-
-                                    <!-- Price -->
-                                    <td class="bg-white ">
-                                        <h5 class="fw-light">Price</h5>
-                                        <span class="text-primary display-omd fw-bold">15 KD</span>
-                                    </td>
-
-                                    <!-- Remove -->
-                                    <td class="align-top text-end bg-white rounded-end ps-5">
-                                        <button class="btn btn-secondary btn-sm rounded-4">
-                                            <i class="fas fa-trash-alt"></i>
+                                <div class="col-md-3 col-9 mt-3 ">
+                                    <h5 class="fw-light">Quantity</h5>
+                                    <div class="quantity-buttons input-group flex-nowrap my-2 bg-light rounded-4 ">
+                                        <button class="btn rounded-4 minus">
+                                            <i class="fas fa-circle-minus"></i>
                                         </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Product Info (img , title , category) -->
-                                    <td class="bg-white rounded-start">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="flex-shrink-0 rounded-4 p-3 bg-yellow  product-img me-2">
-                                                <img src="../../assets/img/home/noBG-mango.png" width="87"
-                                                    alt="blueberry bamboo">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h4>Vegetables box</h4>
-                                                <a href="product-details.html"
-                                                    class="text-decoration-underline text-black fw-light">Greens</a>
-                                            </div>
-                                        </div>
-                                    </td>
-
-
-                                    <!-- Sizes -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Sizes</h5>
-
-                                        <select name="sizes"
-                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
-                                            <option value="750g">750 g</option>
-                                            <option value="852g">852 g</option>
-                                        </select>
-                                    </td>
-
-                                    <!-- Quantity -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Quantity</h5>
-
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button class="btn rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
-                                            </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button class="btn rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-
-                                    <!-- Price -->
-                                    <td class="bg-white ">
-                                        <h5 class="fw-light">Price</h5>
-                                        <span class="text-primary display-omd fw-bold">15 KD</span>
-                                    </td>
-
-                                    <!-- Remove -->
-                                    <td class="align-top text-end bg-white rounded-end ps-5">
-                                        <button class="btn btn-secondary btn-sm rounded-4">
-                                            <i class="fas fa-trash-alt"></i>
+                                        <input type="number"
+                                            class="form-control border-0 text-center px-0  bg-light remove-arrows"
+                                            style="width: 50px;" value="1" placeholder="1" min="1">
+                                        <button class="btn rounded-4 plus">
+                                            <i class="fas fa-circle-plus"></i>
                                         </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- Product Info (img , title , category) -->
-                                    <td class="bg-white rounded-start">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div
-                                                class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
-                                                <img src="../../assets/img/home/noBG-blueberry.png" width="87"
-                                                    alt="blueberry bamboo">
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <h4>Vegetables box</h4>
-                                                <a href="product-details.html"
-                                                    class="text-decoration-underline text-black fw-light">Greens</a>
-                                            </div>
-                                        </div>
-                                    </td>
+                                    </div>
+                                </div>
 
 
-                                    <!-- Sizes -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Sizes</h5>
 
-                                        <select name="sizes"
-                                            class="form-select bg-primary text-white rounded-4 w-auto opacity-50 pe-5 cursor-pointer">
-                                            <option value="750g">750 g</option>
-                                            <option value="852g">852 g</option>
-                                        </select>
-                                    </td>
-
-                                    <!-- Quantity -->
-                                    <td class="bg-white px-3">
-                                        <h5 class="fw-light">Quantity</h5>
-
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button class="btn rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
-                                            </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button class="btn rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-
-                                    <!-- Price -->
-                                    <td class="bg-white ">
-                                        <h5 class="fw-light">Price</h5>
-                                        <span class="text-primary display-omd fw-bold">15 KD</span>
-                                    </td>
-
+                                <div class="col-1 align-self-md-start text-end sc-2">
                                     <!-- Remove -->
-                                    <td class="align-top text-end bg-white rounded-end ps-5">
-                                        <button class="btn btn-secondary btn-sm rounded-4">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </button>
-                                    </td>
-                                </tr>
 
-                            </table>
-                        </div>
+                                    <button class="btn btn-secondary btn-sm rounded-4">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="row gx-4 bg-white p-2 align-items-center rounded-4">
+                                <div class="d-flex align-items-center gap-2 col-md-6 col-11 sc-1">
+                                    <div class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
+                                        <img src="../../assets/img/home/noBG-cheese.png" width="87"
+                                            alt="blueberry bamboo">
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h4 class="text-truncate">Vegetables box</h4>
+
+                                        <a href="product-details.html"
+                                            class="text-decoration-underline text-black fw-light d-block">Greens</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-2 col-3">
+                                    <h5 class="fw-light">Price</h5>
+                                    <span class="text-primary display-omd fw-bold" dir="ltr">15
+                                        KD</span>
+                                </div>
+
+                                <div class="col-md-3 col-9 mt-3 ">
+                                    <h5 class="fw-light">Quantity</h5>
+                                    <div class="quantity-buttons input-group flex-nowrap my-2 bg-light rounded-4 ">
+                                        <button class="btn rounded-4 minus">
+                                            <i class="fas fa-circle-minus"></i>
+                                        </button>
+                                        <input type="number"
+                                            class="form-control border-0 text-center px-0  bg-light remove-arrows"
+                                            style="width: 50px;" value="1" placeholder="1" min="1">
+                                        <button class="btn rounded-4 plus">
+                                            <i class="fas fa-circle-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-1 align-self-md-start text-end sc-2">
+                                    <!-- Remove -->
+
+                                    <button class="btn btn-secondary btn-sm rounded-4">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li class="row gx-4 bg-white p-2 align-items-center rounded-4">
+                                <div class="d-flex align-items-center gap-2 col-md-6 col-11 sc-1">
+                                    <div class="flex-shrink-0 rounded-4 p-3 bg-danger bg-opacity-25 product-img me-2">
+                                        <img src="../../assets/img/home/noBG-celery.png" width="87"
+                                            alt="blueberry bamboo">
+                                    </div>
+                                    <div class="flex-grow-1 overflow-hidden">
+                                        <h4 class="text-truncate">Vegetables box</h4>
+
+                                        <a href="product-details.html"
+                                            class="text-decoration-underline text-black fw-light d-block">Greens</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-2 col-3">
+                                    <h5 class="fw-light">Price</h5>
+                                    <span class="text-primary display-omd fw-bold" dir="ltr">15
+                                        KD</span>
+                                </div>
+
+                                <div class="col-md-3 col-9 mt-3 ">
+                                    <h5 class="fw-light">Quantity</h5>
+                                    <div class="quantity-buttons input-group flex-nowrap my-2 bg-light rounded-4 ">
+                                        <button class="btn rounded-4 minus">
+                                            <i class="fas fa-circle-minus"></i>
+                                        </button>
+                                        <input type="number"
+                                            class="form-control border-0 text-center px-0  bg-light remove-arrows"
+                                            style="width: 50px;" value="1" placeholder="1" min="1">
+                                        <button class="btn rounded-4 plus">
+                                            <i class="fas fa-circle-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-1 align-self-md-start text-end sc-2">
+                                    <!-- Remove -->
+
+                                    <button class="btn btn-secondary btn-sm rounded-4">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <aside class="col-xl-3 col-lg-4">
@@ -430,9 +389,10 @@
                         <!-- Coupon Code -->
                         <section>
                             <h6 class="form-text">Coupon Code?</h6>
-                            <div class="d-flex gap-1">
-                                <input type="text" class="form-control rounded-4" placeholder="Coupon Code">
-                                <button type="button" class="btn btn-secondary rounded-4"><i
+                            <div class="d-flex gap-1 discount-code">
+                                <input type="text" class="form-control rounded-4 discount-input"
+                                    placeholder="Coupon Code">
+                                <button type="button" class="btn btn-secondary rounded-4 discount-btn"><i
                                         class="fas fa-check align-middle"></i></button>
                             </div>
                         </section>
