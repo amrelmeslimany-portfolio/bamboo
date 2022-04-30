@@ -246,121 +246,222 @@
                 ** Cart part
              -->
 
-            <main>
+            <main class="row g-4">
                 <!-- Product Details -->
-                <div class="bg-light rounded-4 p-3">
-                    <div class="row g-5">
-                        <!-- Product images -->
-                        <div class="col-md-7  col-xl-5">
-                            <div class="p-4 rounded-4 bg-light-primary">
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <div class="bg-light rounded-4 p-3">
+                        <div class="row g-3">
+                            <!-- Product images -->
+                            <div class="col-md">
+                                <div class="p-4 rounded-4 bg-light-primary">
 
 
-                                <div class="tab-content">
-                                    <div class="tab-pane mx-auto fade show active" id="blackberry1" role="tabpanel">
-                                        <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
-                                            alt="blackberry fruit">
-                                    </div>
-                                    <div class="tab-pane mx-auto fade" id="blackberry2" role="tabpanel">
-                                        <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
-                                            alt="blackberry fruit">
-                                    </div>
-                                </div>
-
-
-
-                                <!-- image carousel -->
-                                <!-- ! Dont change the structure because I used it at javascript -->
-
-                                <div class="nav nav-pills owl-carousel imagesproduct-carousel mt-4" role="tablist">
-                                    <div class="nav-item" role="presentation">
-                                        <button class="btn bg-white rounded-4 p-3 nav-link border border-light active"
-                                            id="blackberry1-tab" data-bs-toggle="pill" data-bs-target="#blackberry1"
-                                            type="button">
-                                            <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
+                                    <div class="tab-content">
+                                        <div class="tab-pane mx-auto fade show active" id="blackberry1" role="tabpanel">
+                                            <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
                                                 alt="blackberry fruit">
-                                        </button>
-                                    </div>
-                                    <div class="nav-item" role="presentation">
-                                        <button class="btn bg-white rounded-4 p-3 nav-link border border-light"
-                                            id="blackberry2-tab" data-bs-toggle="pill" data-bs-target="#blackberry2"
-                                            type="button">
-                                            <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
+                                        </div>
+                                        <div class="tab-pane mx-auto fade" id="blackberry2" role="tabpanel">
+                                            <img src="../../assets/img/home/blackberry-fruit-big.jpg" width="100%"
                                                 alt="blackberry fruit">
-                                        </button>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- image carousel -->
+                                    <!-- ! Dont change the structure because I used it at javascript -->
+
+                                    <div class="nav nav-pills owl-carousel imagesproduct-carousel mt-4" role="tablist">
+                                        <div class="nav-item" role="presentation">
+                                            <button
+                                                class="btn bg-white rounded-4 p-3 nav-link border border-light active"
+                                                id="blackberry1-tab" data-bs-toggle="pill" data-bs-target="#blackberry1"
+                                                type="button">
+                                                <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
+                                                    alt="blackberry fruit">
+                                            </button>
+                                        </div>
+                                        <div class="nav-item" role="presentation">
+                                            <button class="btn bg-white rounded-4 p-3 nav-link border border-light"
+                                                id="blackberry2-tab" data-bs-toggle="pill" data-bs-target="#blackberry2"
+                                                type="button">
+                                                <img src="../../assets/img/home/noBG-blackberry-fruit.png" width="55"
+                                                    alt="blackberry fruit">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Product desc with additions features -->
-                        <div class="col-md offset-xl-2 py-2 align-self-center">
-                            <form>
-                                <div class="d-flex">
-                                    <article class="flex-grow-1">
-                                        <h4 class="text-break mb-0">Blackberry</h4>
-                                        <strong class="display-xomd">15 KD</strong>
-                                        <a href="reviews.html" class="text-black display-omd">
-                                            <ul class="list-inline mb-0">
-                                                <li class="list-inline-item me-0">
-                                                    <i class="fas fa-star star-color"></i>
-                                                </li>
-                                                <li class="list-inline-item me-0">
-                                                    <i class="fas fa-star star-color"></i>
-                                                </li>
-                                                <li class="list-inline-item me-0">
-                                                    <i class="fas fa-star star-color"></i>
-                                                </li>
-                                                <li class="list-inline-item me-0">
-                                                    <i class="fas fa-star star-color"></i>
-                                                </li>
-                                                <li class="list-inline-item me-0">
-                                                    <i class="fas fa-star star-color"></i>
-                                                </li>
-                                                <li class="list-inline-item display-sm text-decoration-underline">
-                                                    (152)
-                                                </li>
-                                            </ul>
-                                        </a>
-                                    </article>
-                                    <div class="flex-shrink-0 flex-column d-flex gap-1 ms-1">
-                                        <button class="btn btn-secondary rounded-4 px-2">
-                                            <i class="fas fa-heart display-omd align-middle"></i>
-                                        </button>
-
-                                        <button class="btn btn-share text-white rounded-4 px-2">
-                                            <i class="fas fa-share-nodes display-omd align-middle"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <hr class="bg-light-gray my-4">
-
-                                <section class="row g-2 align-items-center">
-                                    <h6 class="col mb-0">الكمية</h6>
-                                    <div class="col">
-                                        <div class="quantity-buttons input-group flex-nowrap">
-                                            <button type="button" class="btn btn-light-primary rounded-4 minus">
-                                                <i class="fas fa-circle-minus"></i>
+                            <!-- Product desc with additions features -->
+                            <div class="col-md py-2">
+                                <form>
+                                    <div class="d-flex">
+                                        <article class="flex-grow-1">
+                                            <h4 class="text-break mb-0">Blackberry</h4>
+                                            <strong class="display-xomd">15 KD</strong>
+                                            <a href="reviews.html" class="text-black display-omd">
+                                                <ul class="list-inline mb-0">
+                                                    <li class="list-inline-item me-0">
+                                                        <i class="fas fa-star star-color"></i>
+                                                    </li>
+                                                    <li class="list-inline-item me-0">
+                                                        <i class="fas fa-star star-color"></i>
+                                                    </li>
+                                                    <li class="list-inline-item me-0">
+                                                        <i class="fas fa-star star-color"></i>
+                                                    </li>
+                                                    <li class="list-inline-item me-0">
+                                                        <i class="fas fa-star star-color"></i>
+                                                    </li>
+                                                    <li class="list-inline-item me-0">
+                                                        <i class="fas fa-star star-color"></i>
+                                                    </li>
+                                                    <li class="list-inline-item display-sm text-decoration-underline">
+                                                        (152)
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </article>
+                                        <div class="flex-shrink-0 flex-column d-flex gap-1 ms-1">
+                                            <button class="btn btn-secondary rounded-4 px-2">
+                                                <i class="fas fa-heart display-omd align-middle"></i>
                                             </button>
-                                            <input type="number"
-                                                class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
-                                                style="width: 30px;" value="1" placeholder="1" min="1">
-                                            <button type="button" class="btn btn-light-primary rounded-4 plus">
-                                                <i class="fas fa-circle-plus"></i>
+
+                                            <button class="btn btn-share text-white rounded-4 px-2">
+                                                <i class="fas fa-share-nodes display-omd align-middle"></i>
                                             </button>
                                         </div>
                                     </div>
 
-                                    <div class="col-12 mt-4">
-                                        <button class="btn btn-primary rounded-4 w-100" type="submit">
-                                            <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                            اضافة للسلة
-                                        </button>
-                                    </div>
-                                </section>
-                            </form>
+                                    <hr class="bg-light-gray my-4">
+
+                                    <section class="row g-2 align-items-center">
+                                        <h6 class="col mb-0">الكمية</h6>
+                                        <div class="col">
+                                            <div class="quantity-buttons input-group flex-nowrap">
+                                                <button type="button" class="btn btn-light-primary rounded-4 minus">
+                                                    <i class="fas fa-circle-minus"></i>
+                                                </button>
+                                                <input type="number"
+                                                    class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                                    style="width: 30px;" value="1" placeholder="1" min="1">
+                                                <button type="button" class="btn btn-light-primary rounded-4 plus">
+                                                    <i class="fas fa-circle-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 mt-4">
+                                            <button class="btn btn-primary rounded-4 w-100" type="submit">
+                                                <i class="fas fa-bag-shopping me-1 align-middle"></i>
+                                                اضافة للسلة
+                                            </button>
+                                        </div>
+                                    </section>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <aside class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="bg-light rounded-4 p-3">
+                        <h4 class="mb-3">السلة</h4>
+                        <!-- Cart Table -->
+                        <ul class="list-unstyled cart-table">
+                            <li class="p-2 rounded-4 bg-white d-flex">
+                                <!-- Product img -->
+                                <div class="flex-shrink-0 me-2 rounded-4 bg-yellow p-2">
+                                    <img src="../../assets/img/home/noBG-box.png" width="80" class="img-fluid"
+                                        alt="box fruits">
+                                </div>
+                                <!-- Product Desc -->
+                                <div class="flex-grow-1">
+                                    <a class="text-black d-inline-block" href="products.html">
+                                        <p class="mb-0 text-break">Greens</p>
+                                        <span class="fw-bold">15 KD</span>
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm rounded-4 float-end">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+
+                                    <div class="quantity-buttons input-group flex-nowrap mt-1">
+                                        <button class="btn rounded-4 minus">
+                                            <i class="fas fa-circle-minus"></i>
+                                        </button>
+                                        <input type="number"
+                                            class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                            style="width: 30px;" value="1" placeholder="1" min="1">
+                                        <button class="btn rounded-4 plus">
+                                            <i class="fas fa-circle-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="p-2 rounded-4 bg-white d-flex">
+                                <!-- Product img -->
+                                <div class="flex-shrink-0 me-2 rounded-4 bg-yellow p-2">
+                                    <img src="../../assets/img/home/noBG-box.png" width="80" class="img-fluid"
+                                        alt="box fruits">
+                                </div>
+                                <!-- Product Desc -->
+                                <div class="flex-grow-1">
+                                    <a class="text-black d-inline-block" href="products.html">
+                                        <p class="mb-0 text-break">Greens</p>
+                                        <span class="fw-bold">15 KD</span>
+                                    </a>
+                                    <button class="btn btn-secondary btn-sm rounded-4 float-end">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+
+                                    <div class="quantity-buttons input-group flex-nowrap mt-1">
+                                        <button class="btn rounded-4 minus">
+                                            <i class="fas fa-circle-minus"></i>
+                                        </button>
+                                        <input type="number"
+                                            class="form-control border-0 text-center px-0 flex-shrink-0 remove-arrows"
+                                            style="width: 30px;" value="1" placeholder="1" min="1">
+                                        <button class="btn rounded-4 plus">
+                                            <i class="fas fa-circle-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <hr class="bg-light-gray">
+                        <!-- Payment Summary -->
+                        <section class="mt-1">
+                            <h5>ملخص الدفع :</h5>
+                            <div class="row gx-0 gy-2">
+                                <!-- Summary Sub Total -->
+                                <p class="col-9">
+                                    المصاريف
+                                </p>
+                                <p class="col-3 text-end">
+                                    30 KD
+                                </p>
+                                <!-- Summary Delivery cost -->
+                                <p class="col-9">
+                                    مصاريف الشحن
+                                </p>
+                                <p class="col-3 text-end">
+                                    2 KD
+                                </p>
+
+                                <!-- Total -->
+                                <div class="d-flex justify-content-between gap-1 mt-2">
+                                    <strong>
+                                        المجمل
+                                    </strong>
+                                    <strong>
+                                        32 KD
+                                    </strong>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </aside>
             </main>
 
             <!-- Selected Products -->
