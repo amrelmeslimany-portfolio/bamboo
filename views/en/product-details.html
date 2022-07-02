@@ -291,9 +291,9 @@
                                 </div>
                             </div>
                             <!-- Product desc with additions features -->
-                            <div class="col-md py-2 ">
+                            <div class="col-md py-2">
                                 <form>
-                                    <div class="d-flex my-lg-5">
+                                    <div class="d-flex my-lg-4">
                                         <article class="flex-grow-1">
                                             <h4 class="text-break mb-0">Blackberry</h4>
                                             <strong class="display-xomd">15 KD</strong>
@@ -321,19 +321,78 @@
                                             </a>
                                         </article>
                                         <div class="flex-shrink-0 flex-column d-flex gap-1 ms-1">
-                                            <button class="btn btn-secondary rounded-4 px-2">
+                                            <button class="btn rounded-4 px-2 favouritebtn" type="button">
                                                 <i class="fas fa-heart display-omd align-middle"></i>
                                             </button>
 
-                                            <button class="btn btn-share text-white rounded-4 px-2">
+                                            <button class="btn btn-share text-white rounded-4 px-2" type="button">
                                                 <i class="fas fa-share-nodes display-omd align-middle"></i>
                                             </button>
                                         </div>
                                     </div>
 
-                                    <hr class="bg-light-gray my-5">
+                                    <hr class="bg-light-gray my-2">
+                                    <section class="row my-xl-4 my-3 g-3 sizesBox">
+                                        <h6 class="col-auto mb-0">Size</h6>
+                                        <div class="col">
+                                            <div class="row g-2">
 
-                                    <section class="row g-2 mt-lg-5 pt-lg-4 align-items-center">
+                                                <div class="col-auto">
+                                                    <input type="checkbox" name="size" value="sm" class="btn-check"
+                                                        id="btn-check1">
+                                                    <label class="btn border border-primary btn-sm rounded-4"
+                                                        for="btn-check1">
+                                                        <span>small</span>
+                                                        <hr class="my-1">
+                                                        <span>15KD</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <input type="checkbox" name="size" value="md" class="btn-check"
+                                                        id="btn-check2">
+                                                    <label class="btn border border-primary btn-sm rounded-4"
+                                                        for="btn-check2">
+                                                        <span>medium</span>
+                                                        <hr class="my-1">
+                                                        <span>15KD</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <input type="checkbox" name="size" value="lg" class="btn-check"
+                                                        id="btn-check3">
+                                                    <label class="btn border border-primary btn-sm rounded-4"
+                                                        for="btn-check3">
+                                                        <span>large</span>
+                                                        <hr class="my-1">
+                                                        <span>150KD</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <input type="checkbox" name="size" value="56" class="btn-check"
+                                                        id="btn-check4">
+                                                    <label class="btn border border-primary btn-sm rounded-4"
+                                                        for="btn-check4">
+                                                        <span>56KG</span>
+                                                        <hr class="my-1">
+                                                        <span>15KD</span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <input type="checkbox" name="size" value="1568" class="btn-check"
+                                                        id="btn-check5">
+                                                    <label class="btn border border-primary btn-sm rounded-4"
+                                                        for="btn-check5">
+                                                        <span>1568</span>
+                                                        <hr class="my-1">
+                                                        <span>5468KD</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+
+                                    <section class="row g-2 mt-lg-2  align-items-center">
                                         <h6 class="col mb-0">Quantity</h6>
                                         <div class="col">
                                             <div class="quantity-buttons input-group flex-nowrap">
@@ -352,12 +411,13 @@
                                         <div class="col-12 mt-4">
                                             <button class="btn btn-primary rounded-4 w-100" type="submit">
                                                 <i class="fas fa-bag-shopping me-1 align-middle"></i>
-                                                Add to cart
+                                                Add To Cart
                                             </button>
                                         </div>
                                     </section>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -464,102 +524,42 @@
 
             <!-- Selected Products -->
             <section class="bundles-section my-4">
-                <h4 class="my-3">Addons: </h4>
+                <h4 class="my-3">Add-Ons: </h4>
                 <ul class="bg-light p-4 rounded-4 list-unstyled mb-0">
-                    <li class="row g-2 px-2 py-3">
-                        <div class="col-md-8 align-self-center">
+                    <li class="row g-2 px-2 py-3 ">
+                        <div class="col-9 align-self-center">
                             <h6 class="mb-0 text-truncate">Product Name</h6>
                             <p class="mb-0 mt-1 text-primary">KD 56</p>
                         </div>
-                        <form class="col-md d-flex align-items-center gap-2 flex-wrap justify-content-lg-end">
-                            <select class="form-select rounded-4 bg-light-primary flex-grow-1 w-40">
-                                <option value="1"> 1 product</option>
-                                <option value="2"> 2 product</option>
-                                <option value="3"> 3 product</option>
-                            </select>
-                            <div class="quantity-buttons input-group flex-nowrap flex-grow-1 w-fit">
-                                <button type="button" class="btn btn-light-primary rounded-4 minus">
-                                    <i class="fas fa-circle-minus"></i>
-                                </button>
-                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
-                                    value="1" placeholder="1" min="1" style="width: 80px;">
-                                <button type="button" class="btn btn-light-primary rounded-4 plus">
-                                    <i class="fas fa-circle-plus"></i>
-                                </button>
-                            </div>
-                            <button class="btn btn-secondary rounded-4 flex-grow-1" type="submit">Add</button>
+                        <form class="col-3 text-end">
+                            <button class="btn btn-secondary rounded-4 " type="submit">Add</button>
                         </form>
                     </li>
-                    <li class="row g-2 px-2 py-3">
-                        <div class="col-md-8 align-self-center">
+                    <li class="row g-2 px-2 py-3 ">
+                        <div class="col-9 align-self-center">
                             <h6 class="mb-0 text-truncate">Product Name</h6>
                             <p class="mb-0 mt-1 text-primary">KD 56</p>
                         </div>
-                        <form class="col-md d-flex align-items-center gap-2 flex-wrap justify-content-lg-end">
-                            <select class="form-select rounded-4 bg-light-primary flex-grow-1 w-40">
-                                <option value="1"> 1 Product Name</option>
-                                <option value="2"> 2 Product Name</option>
-                                <option value="3"> 3 Product Name</option>
-                            </select>
-                            <div class="quantity-buttons input-group flex-nowrap flex-grow-1 w-fit">
-                                <button type="button" class="btn btn-light-primary rounded-4 minus">
-                                    <i class="fas fa-circle-minus"></i>
-                                </button>
-                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
-                                    value="1" placeholder="1" min="1" style="width: 80px;">
-                                <button type="button" class="btn btn-light-primary rounded-4 plus">
-                                    <i class="fas fa-circle-plus"></i>
-                                </button>
-                            </div>
-                            <button class="btn btn-secondary rounded-4 flex-grow-1" type="submit">Add</button>
+                        <form class="col-3 text-end">
+                            <button class="btn btn-secondary rounded-4 " type="submit">Add</button>
                         </form>
                     </li>
-                    <li class="row g-2 px-2 py-3">
-                        <div class="col-md-8 align-self-center">
+                    <li class="row g-2 px-2 py-3 ">
+                        <div class="col-9 align-self-center">
                             <h6 class="mb-0 text-truncate">Product Name</h6>
                             <p class="mb-0 mt-1 text-primary">KD 56</p>
                         </div>
-                        <form class="col-md d-flex align-items-center gap-2 flex-wrap justify-content-lg-end">
-                            <select class="form-select rounded-4 bg-light-primary flex-grow-1 w-40">
-                                <option value="1"> 1 Product Name</option>
-                                <option value="2"> 2 Product Name</option>
-                                <option value="3"> 3 Product Name</option>
-                            </select>
-                            <div class="quantity-buttons input-group flex-nowrap flex-grow-1 w-fit">
-                                <button type="button" class="btn btn-light-primary rounded-4 minus">
-                                    <i class="fas fa-circle-minus"></i>
-                                </button>
-                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
-                                    value="1" placeholder="1" min="1" style="width: 80px;">
-                                <button type="button" class="btn btn-light-primary rounded-4 plus">
-                                    <i class="fas fa-circle-plus"></i>
-                                </button>
-                            </div>
-                            <button class="btn btn-secondary rounded-4 flex-grow-1" type="submit">Add</button>
+                        <form class="col-3 text-end">
+                            <button class="btn btn-secondary rounded-4 " type="submit">Add</button>
                         </form>
                     </li>
-                    <li class="row g-2 px-2 py-3">
-                        <div class="col-md-8 align-self-center">
+                    <li class="row g-2 px-2 py-3 ">
+                        <div class="col-9 align-self-center">
                             <h6 class="mb-0 text-truncate">Product Name</h6>
                             <p class="mb-0 mt-1 text-primary">KD 56</p>
                         </div>
-                        <form class="col-md d-flex align-items-center gap-2 flex-wrap justify-content-lg-end">
-                            <select class="form-select rounded-4 bg-light-primary flex-grow-1 w-40">
-                                <option value="1"> 1 Product Name</option>
-                                <option value="2"> 2 Product Name</option>
-                                <option value="3"> 3 Product Name</option>
-                            </select>
-                            <div class="quantity-buttons input-group flex-nowrap flex-grow-1 w-fit">
-                                <button type="button" class="btn btn-light-primary rounded-4 minus">
-                                    <i class="fas fa-circle-minus"></i>
-                                </button>
-                                <input type="number" class="form-control border-0 text-center px-0  remove-arrows"
-                                    value="1" placeholder="1" min="1" style="width: 80px;">
-                                <button type="button" class="btn btn-light-primary rounded-4 plus">
-                                    <i class="fas fa-circle-plus"></i>
-                                </button>
-                            </div>
-                            <button class="btn btn-secondary rounded-4 flex-grow-1" type="submit">Add</button>
+                        <form class="col-3 text-end">
+                            <button class="btn btn-secondary rounded-4 " type="submit">Add</button>
                         </form>
                     </li>
                 </ul>

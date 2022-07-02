@@ -4,6 +4,7 @@ $(function () {
   const mainHeader = $("#main-header");
   const quantityButtons = $(".quantity-buttons");
   const selectedLanguage = $("body").css("direction");
+  const favouriteButtons = $(".favouritebtn");
 
   // Home page
   const categoryList = $(".categories-swiper");
@@ -162,6 +163,13 @@ $(function () {
   loading.hide(100, function () {
     $(this).remove();
   });
+
+  // Active Favourite Button
+  if (favouriteButtons.length) {
+    favouriteButtons.click(function () {
+      $(this).toggleClass("active");
+    });
+  }
 
   // Add to body, padding top because the navbar and the alert if founded
   $("body").css("padding-top", bodyPaddingTop() + "px");
